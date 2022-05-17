@@ -1,0 +1,45 @@
+{
+   "modules":[
+      {
+         "title":"",
+         "alt":"home",
+         "url":"",
+         "icon":"Home.svg"
+      },
+      {
+         "title":"",
+         "alt":"wod",
+         "url":"wods",
+         "icon":"Weightlifting.svg"
+      },
+      {
+         "title":"",
+         "alt":"users",
+         "url":"users",
+         "icon":"UserAccount.svg"
+      }
+   ],
+   "navItems":[
+      {
+        "page_01":[]
+      },
+      {
+        "page_02":[
+           {
+               "title":"Calendario",
+               "url":"calendario",
+               "icon":null
+            },
+            {
+               "title":"WODs",
+               "url":"wods",
+               "icon":null
+            }
+         ]
+      }
+   ],
+   "user":{
+         "img":"Logo.jpg",
+         "name":"Crosfit Arteixo"
+   }
+}
