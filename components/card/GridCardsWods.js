@@ -1,6 +1,6 @@
 import wodsList from "../../data/lista_wods.json";
 
-import styles from "../../styles/Card.module.css"
+import styles from "../../styles/Card.module.scss";
 
 import CardWods from "./CardWods";
 

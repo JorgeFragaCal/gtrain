@@ -1,0 +1,26 @@
+@import 'theme.scss';
+.container{
+    background: $color-white;
+    box-shadow: $box-shadows;
+    display: none;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: auto;
+    .buttons{
+        display: grid;
+        grid-auto-flow: column;
+        .delete{
+            color: $color-red;
+        }
+        button{
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-weight: $font-weight-primary-bold;
+        }
+    }
+}
+.active{
+    display: grid;
+}

@@ -1,7 +1,7 @@
 import SidebarRow from "./SidebarRow";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../../styles/Sidebar.module.css";
+import styles from "../../styles/Sidebar.module.scss";
 function Sidebar({ modules, navItems, user }) {
   return (
     <aside className={styles.navigation}>

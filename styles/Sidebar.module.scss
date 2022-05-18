@@ -1,0 +1,58 @@
+@import 'theme.scss';
+.navigation{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: 100vh;
+    .moduleBar{
+        background-color:$color-primary;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        max-width: 100px;
+        width: 100%;
+        .moduleBarLogo{
+            background-color: $color-orange;
+        }
+    }
+    .moduleNav{
+        background-color: $color-grey;
+        width: 270px;
+        .moduleNavUserInfo{
+            background-color: $color-darkgrey;
+            display: flex;
+            padding: 25px 16px;
+            img{
+              border-radius: $border-radius-img;
+              -webkit-border-radius: $border-radius-img;
+              -moz-border-radius: $border-radius-img;
+              -ms-border-radius: $border-radius-img;
+              -o-border-radius: $border-radius-img;
+            }
+            span{
+                align-self: center;
+                font-size: $font-size-18;
+                font-weight: $font-weight-primary-bold;
+                padding-left: 1rem;
+            }
+        }
+    }
+    .button,.moduleBarLogo,.moduleBarSettings{
+        align-items: center;
+        display: flex;
+        height: 100px;
+        padding: 30px;
+    }
+    .button:hover{
+        background-color: $color-darkgrey;
+        img{
+            filter: invert(1);
+            -webkit-filter: invert(1);
+        }
+    }
+    .buttonActive{
+        background-color: $color-darkgrey;
+        img{
+            filter: invert(1);
+            -webkit-filter: invert(1);
+        }
+    }
+}

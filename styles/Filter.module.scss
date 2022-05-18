@@ -1,0 +1,6 @@
+@import 'theme.scss';
+.container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto 1fr auto;
+}

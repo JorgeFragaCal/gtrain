@@ -1,6 +1,6 @@
 import usersList from "../../data/lista_usuarios.json";
 
-import styles from "../../styles/CardUser.module.css";
+import styles from "../../styles/CardUser.module.scss";
 
 import CardUser from "./CardUser";
 

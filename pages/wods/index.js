@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import dataMenu from "../../data/menu.json";
-import styles from "../../styles/Layout.module.css";
+import styles from "../../styles/Layout.module.scss";
 
 import Button from "../../components/atoms/Button";
 import Filter from "../../components/Filter";

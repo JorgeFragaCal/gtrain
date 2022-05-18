@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.scss";
 import Sidebar from "../components/Sidebar/Sidebar";
 import dataMenu from "../data/menu.json";
 import Form from "../components/form/Form";
@@ -23,9 +23,7 @@ export default function Home() {
           navItems={dataMenu.navItems[0].page_01}
           user={dataMenu.user}
         />
-        <section>
-        
-        </section>
+        <section></section>
       </main>
     </div>
   );

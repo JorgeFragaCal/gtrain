@@ -1,4 +1,4 @@
-import styles from "../../styles/User.module.css";
+import styles from "../../styles/User.module.scss";
 
 function UserWods({ disable, alert }) {
   const img =
@@ -7,7 +7,7 @@ function UserWods({ disable, alert }) {
     <div
       className={`${styles.imgWod}
           ${disable ? styles.imgWodDisable : ""}
-          ${alert ? styles.imgWodAlert: ""}
+          ${alert ? styles.imgWodAlert : ""}
           `}
       style={{
         backgroundImage: "url(" + `${img}` + ")",

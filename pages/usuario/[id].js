@@ -1,6 +1,6 @@
 import dataMenu from "../../data/menu.json";
 
-import styles from "../../styles/Layout.module.css";
+import styles from "../../styles/Layout.module.scss";
 
 import Filter from "../../components/Filter";
 import Sidebar from "../../components/Sidebar/Sidebar";

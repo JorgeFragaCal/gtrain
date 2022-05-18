@@ -1,0 +1,19 @@
+@import 'theme.scss';
+.container{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    .topTitle{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    #buscador{
+        border: none;
+        border-bottom: 1px solid $border-color;
+        width: 150px;
+        &:focus-visible {
+            outline: none;
+
+        }
+    }
+}

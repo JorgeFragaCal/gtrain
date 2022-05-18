@@ -1,4 +1,4 @@
-import styles from "../styles/Top.module.css";
+import styles from "../styles/Top.module.scss";
 function Top({ title }) {
   return (
     <section className={styles.container}>
@@ -9,7 +9,7 @@ function Top({ title }) {
       <div></div>
       <div className={styles.topTitle}>
         <i>🔍</i>
-        <input id={styles.buscador} type="text" name="buscar"  />
+        <input id={styles.buscador} type="text" name="buscar" />
       </div>
     </section>
   );

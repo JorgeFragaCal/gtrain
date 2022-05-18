@@ -1,8 +1,8 @@
 import dataMenu from "../../../data/menu.json";
 
-import styles from "../../../styles/Layout.module.css";
+import styles from "../../../styles/Layout.module.scss";
 
-import Calendar from "../../../components/calendar/Calendar"
+import Calendar from "../../../components/calendar/Calendar";
 import Sidebar from "../../../components/Sidebar/Sidebar";
 import Top from "../../../components/Top";
 

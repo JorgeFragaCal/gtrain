@@ -1,4 +1,4 @@
-import styles from "../../styles/User.module.css"
+import styles from "../../styles/User.module.scss";
 
 import Calendar from "./Calendar";
 import Char from "./Char";

@@ -1,6 +1,5 @@
-
 import FormRow from "./FormRow";
-import styles from "../../styles/Form.module.css";
+import styles from "../../styles/Form.module.scss";
 import Button from "../atoms/Button";
 function Form() {
   const listaEjercicos = [
@@ -28,7 +27,7 @@ function Form() {
       <form action="" method="post" className={styles.container}>
         <div className={styles.formTop}>
           <input type="text" name="" id="" placeholder="Nombre del WOD" />
-          <i >Cerrar</i>
+          <i>Cerrar</i>
         </div>
         <div className={styles.formList}>
           <label htmlFor="">Ejecicio</label>

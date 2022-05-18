@@ -1,0 +1,11 @@
+@import 'theme.scss';
+.primary {
+    background: $color-orange;
+    border-radius: 5px;
+    border: none;
+    color: $color-white;
+    cursor: pointer;
+    font-size: $font-size-18;
+    padding: 1rem;
+    width: 100%;
+}

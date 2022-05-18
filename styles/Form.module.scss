@@ -1,0 +1,73 @@
+@import 'theme.scss';
+.container{
+    background-color: $color-white;
+    box-shadow: $box-shadows;
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: auto 1fr auto;
+    left: calc($border-radius-img - 33vw/2);
+    max-width: 33vw;
+    padding: 2rem;
+    position: fixed;
+    top: 100px;
+    z-index: 2;
+    .formTop{
+        align-items:center;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 3fr 2fr;
+        justify-items: end;
+    }
+    .formFieldset,.formList {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+    .formList{
+        align-items: center;
+        .formEditIcons{
+            display: flex;
+            gap: 0.5rem;
+        }
+    }
+    .formFieldset input,.formFieldset select,.formTop input,.formFooter input{
+        border: 1px solid $border-color;
+        border-radius: $border-radius-box;
+        font-size: $font-size-18;
+        padding: 1rem;
+        width: 100%;
+        -webkit-border-radius: $border-radius-box;
+        -moz-border-radius: $border-radius-box;
+        -ms-border-radius: $border-radius-box;
+        -o-border-radius: $border-radius-box;
+    }
+    .formFooter {
+        border: none;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns:  2.5fr 2.5fr;
+        padding: 0;
+    }
+    .formButton{
+        align-items: flex-end;
+        display: flex;
+    }
+
+}
+.overlay{
+    background-color: #000000e6;
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    transition: opacity .3var cubic-bezier(.4, 0, .2, 1);
+    -webkit-transition: opacity .3var cubic-bezier(.4, 0, .2, 1);
+    -moz-transition: opacity .3var cubic-bezier(.4, 0, .2, 1);
+    -ms-transition: opacity .3var cubic-bezier(.4, 0, .2, 1);
+    -o-transition: opacity .3var cubic-bezier(.4, 0, .2, 1);
+    width: 100%;
+}
+
+
+

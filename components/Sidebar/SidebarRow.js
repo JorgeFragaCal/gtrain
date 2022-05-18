@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 
-import styles from "../../styles/Sidebar.module.css";
+import styles from "../../styles/Sidebar.module.scss";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -11,8 +11,7 @@ function SidebarRow({ icon, title, url, alt }) {
       <a>
         <div
           className={`${styles.button}
-          ${router.asPath == `/${url}` ? styles.buttonActive : ""
-          }`}
+          ${router.asPath == `/${url}` ? styles.buttonActive : ""}`}
         >
           {icon ? (
             <Image src={`/${icon}`} width="40" height="40" alt={alt} />

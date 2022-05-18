@@ -1,0 +1,70 @@
+@import 'theme.scss';
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .userInfo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        img{
+           border-radius: $border-radius-img;
+           -webkit-border-radius: $border-radius-img;
+           -moz-border-radius: $border-radius-img;
+           -ms-border-radius: $border-radius-img;
+           -o-border-radius: $border-radius-img;
+           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+           -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+       }
+    }
+}
+.gridUserWods {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(276px, 1fr));
+    max-height: 60vh;
+    overflow-y: auto;
+    padding-right: 1rem;
+    &::-webkit-scrollbar {
+            width: 0.5rem;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: $color-grey;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $color-darkgrey;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+    }
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $color-darkgrey;
+    }
+    .imgWod{
+        height: 272px;
+        justify-self: center;
+        text-align: right;
+        width: 100%;
+    }
+    .imgWodAlert{
+        border: 2px solid $color-red;
+        &::after {
+            content: url('/CalendarAlert.png');
+        }
+    }
+    .imgWodDisable {
+        filter: saturate(0);
+        -webkit-filter: saturate(0);
+    }
+}
+
+
