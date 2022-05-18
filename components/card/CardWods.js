@@ -1,7 +1,8 @@
 import styles from "../../styles/Card.module.css";
+
 import AlertDelete from "../AlertDelete";
 
-function Card({ data }) {
+function CardWods({ data }) {
   return (
     <div className={styles.card}>
       <div className={styles.cardContent}>
@@ -31,4 +32,4 @@ function Card({ data }) {
   );
 }
 
-export default Card;
+export default CardWods;

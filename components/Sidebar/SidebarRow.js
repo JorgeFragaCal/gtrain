@@ -1,11 +1,19 @@
+import { useRouter } from "next/router";
+
+import styles from "../../styles/Sidebar.module.css";
+
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../../styles/Sidebar.module.css";
 function SidebarRow({ icon, title, url, alt }) {
+  const router = useRouter();
   return (
     <Link href={`/${url}`}>
       <a>
-        <div className={styles.button}>
+        <div
+          className={`${styles.button}
+          ${router.asPath == `/${url}` ? styles.buttonActive : ""
+          }`}
+        >
           {icon ? (
             <Image src={`/${icon}`} width="40" height="40" alt={alt} />
           ) : null}

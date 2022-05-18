@@ -41,6 +41,13 @@
 .button:hover{
     background-color: #E4EAF1;
 }
+.buttonActive{
+    background-color: #E4EAF1;
+}
+.buttonActive img{
+    filter: invert(1);
+    -webkit-filter: invert(1);
+}
 .button:hover img{
     filter: invert(1);
     -webkit-filter: invert(1);

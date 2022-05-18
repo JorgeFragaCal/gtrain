@@ -9,7 +9,7 @@ function Top({ title }) {
       <div></div>
       <div className={styles.topTitle}>
         <i>🔍</i>
-        <input className={styles.buscador} type="text" name="buscar" id="" />
+        <input id={styles.buscador} type="text" name="buscar"  />
       </div>
     </section>
   );

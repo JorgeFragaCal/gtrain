@@ -5,6 +5,8 @@
     grid-auto-rows: 1fr;
     overflow-y: auto;
     padding-right: 1rem;
+    max-height: 74vh;
+    height: 100%;
 }
 .gridCards::-webkit-scrollbar {
     width: 0.5rem;

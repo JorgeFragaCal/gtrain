@@ -15,7 +15,7 @@
       {
          "title":"",
          "alt":"users",
-         "url":"users",
+         "url":"clientes",
          "icon":"UserAccount.svg"
       }
    ],
@@ -27,12 +27,31 @@
         "page_02":[
            {
                "title":"Calendario",
-               "url":"calendario",
+               "url":"wods/calendario",
                "icon":null
             },
             {
                "title":"WODs",
                "url":"wods",
+               "icon":null
+            }
+         ]
+      },
+      {
+        "page_03":[
+           {
+               "title":"Lista de Clientes",
+               "url":"clientes",
+               "icon":null
+            },
+            {
+               "title":"Reservas",
+               "url":"clientes/reservas",
+               "icon":null
+            },
+            {
+               "title":"Pagos",
+               "url":"clientes/pagos",
                "icon":null
             }
          ]

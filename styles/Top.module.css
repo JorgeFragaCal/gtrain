@@ -7,12 +7,12 @@
     align-items: center;
     gap: 1rem;
 }
-.buscador{
+#buscador{
     border: none;
     border-bottom: 1px solid #D3D3D3;
-    width: 100px;
+    width: 150px;
 }
-.buscador:focus-visible {
+#buscador:focus-visible {
     outline: none;
 
 }

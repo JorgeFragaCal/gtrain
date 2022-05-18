@@ -1,12 +1,22 @@
 .container{
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: auto auto 1fr;
     padding: 2rem;
+}
+.containerUser {
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: auto auto auto 1fr;
+    padding: 2rem;
+}
+.containerContentFilter{
     display: grid;
     gap: 1rem;
     grid-template-rows: auto 1fr;
 }
-.containerContentFilter{
+.containerButtons{
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr 5fr;
     gap: 1rem;
-    max-height: 86vh;
 }
