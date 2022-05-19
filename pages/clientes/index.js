@@ -1,13 +1,13 @@
-import dataMenu from "../../data/menu.json";
+import dataMenu from "data/menu.json";
 
-import styles from "../../styles/Layout.module.scss";
+import styles from "styles/Layout.module.scss";
 
 import { withAuthUser, AuthAction } from "next-firebase-auth";
 
-import Filter from "../../components/Filter";
-import GridCardsUsers from "../../components/userslist/GridCardUser";
-import Sidebar from "../../components/Sidebar/Sidebar";
-import Top from "../../components/Top";
+import Filter from "components/Filter";
+import GridCardsUsers from "components/userslist/GridCardUser";
+import Sidebar from "components/sidebar/Sidebar";
+import Top from "components/Top";
 
 function Usuarios() {
   return (

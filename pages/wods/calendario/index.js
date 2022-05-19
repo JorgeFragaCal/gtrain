@@ -1,12 +1,12 @@
-import dataMenu from "../../../data/menu.json";
+import dataMenu from "data/menu.json";
 
-import styles from "../../../styles/Layout.module.scss";
+import styles from "styles/Layout.module.scss";
 
 import { withAuthUser, AuthAction } from "next-firebase-auth";
 
-import Calendar from "../../../components/calendar/Calendar";
-import Sidebar from "../../../components/Sidebar/Sidebar";
-import Top from "../../../components/Top";
+import Calendar from "components/calendar/Calendar";
+import Sidebar from "components/sidebar/Sidebar";
+import Top from "components/Top";
 
 function Calendario() {
   return (

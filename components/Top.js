@@ -1,4 +1,4 @@
-import styles from "../styles/Top.module.scss";
+import styles from "styles/Top.module.scss";
 function Top({ title }) {
   return (
     <section className={styles.container}>

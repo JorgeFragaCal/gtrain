@@ -3,7 +3,7 @@ import Link from "next/link";
 
 
 
-import styles from "../../styles/CardUser.module.scss";
+import styles from "styles/CardUser.module.scss";
 
 function CardUser({ data }) {
 

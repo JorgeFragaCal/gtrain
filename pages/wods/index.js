@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 
-import dataMenu from "../../data/menu.json";
-import styles from "../../styles/Layout.module.scss";
+import dataMenu from "data/menu.json";
+import styles from "styles/Layout.module.scss";
 
 import { withAuthUser, AuthAction } from "next-firebase-auth";
 
-import Button from "../../components/atoms/Button";
-import Filter from "../../components/Filter";
-import Form from "../../components/form/Form";
-import GridCardsWods from "../../components/card/GridCardsWods";
-import Sidebar from "../../components/Sidebar/Sidebar";
-import Top from "../../components/Top";
+import Button from "components/atoms/Button";
+import Filter from "components/Filter";
+import Form from "components/form/Form";
+import GridCardsWods from "components/card/GridCardsWods";
+import Sidebar from "components/sidebar/Sidebar";
+import Top from "components/Top";
 
 function WodsList() {
   const [isOpen, setOpen] = useState(false);

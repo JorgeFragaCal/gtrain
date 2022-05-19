@@ -1,4 +1,4 @@
-import styles from "../../styles/Login.module.scss";
+import styles from "styles/Login.module.scss";
 import Image from "next/image";
 import FirebaseAuth from "components/auth/FirebaseAuth";
 import { withAuthUser, AuthAction } from "next-firebase-auth";

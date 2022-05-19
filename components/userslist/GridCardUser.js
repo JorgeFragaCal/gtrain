@@ -1,8 +1,8 @@
-import usersList from "../../data/lista_usuarios.json";
+import usersList from "data/lista_usuarios.json";
 
-import styles from "../../styles/CardUser.module.scss";
+import styles from "styles/CardUser.module.scss";
 
-import CardUser from "./CardUser";
+import CardUser from "components/userslist/CardUser";
 
 function GridCardsUsers() {
   return (

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "styles/Home.module.scss";
-import Sidebar from "components/Sidebar/Sidebar";
+import Sidebar from "components/sidebar/Sidebar";
 import dataMenu from "data/menu.json";
 import { withAuthUser, AuthAction } from "next-firebase-auth";
 

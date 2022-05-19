@@ -1,14 +1,14 @@
-import dataMenu from "../../data/menu.json";
+import dataMenu from "data/menu.json";
 
 import { withAuthUser, AuthAction } from "next-firebase-auth";
 
-import styles from "../../styles/Layout.module.scss";
+import styles from "styles/Layout.module.scss";
 
-import Filter from "../../components/Filter";
-import Sidebar from "../../components/Sidebar/Sidebar";
-import Top from "../../components/Top";
-import TopUser from "../../components/user/TopUser";
-import GridCardUserWods from "../../components/user/GridCardUserWods";
+import Filter from "components/Filter";
+import Sidebar from "components/sidebar/Sidebar";
+import Top from "components/Top";
+import TopUser from "components/user/TopUser";
+import GridCardUserWods from "components/user/GridCardUserWods";
 
 function Usuario() {
   return (
