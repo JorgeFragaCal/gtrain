@@ -38,7 +38,7 @@ function Sidebar({ modules, navItems, user }) {
         </div>
         <div className={styles.moduleBarSettings}>
           <Image
-            src="/Weightlifting.svg"
+            src="/Settings.svg"
             alt="Settings"
             width="40"
             height="40"
