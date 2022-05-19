@@ -5,8 +5,8 @@
     display: grid;
     gap: 1rem;
     grid-template-rows: auto 1fr auto;
-    left: calc($border-radius-img - 33vw/2);
-    max-width: 33vw;
+    left: calc($border-radius-img - 600px/2);
+    max-width: 600px;
     padding: 2rem;
     position: fixed;
     top: 100px;
@@ -21,7 +21,7 @@
     .formFieldset,.formList {
         display: grid;
         gap: 1rem;
-        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-columns: 2fr 0.75fr 0.75fr 1fr;
     }
     .formList{
         align-items: center;

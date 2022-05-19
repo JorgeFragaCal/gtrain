@@ -3,6 +3,7 @@
 .gridCards {
     max-height: 82vh;
     @include grid_scroll();
+    grid-template-columns: repeat(auto-fill, minmax(192px, 1fr));
 }
 
 .card {
@@ -21,6 +22,10 @@
     p{
         font-size: $font-size-14;
         margin: 8px 0;
+        white-space: nowrap;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
     }
     .icons{
         display: flex;

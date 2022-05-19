@@ -6,4 +6,6 @@
 .secondary {
     @include button($color-white,$color-primary,$font-weight-primary-bold,
         1px solid $color-primary);
+        display: flex;
+        justify-content: space-between;
 }

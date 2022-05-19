@@ -27,7 +27,7 @@ function Form() {
       <form action="" method="post" className={styles.container}>
         <div className={styles.formTop}>
           <input type="text" name="" id="" placeholder="Nombre del WOD" />
-          <i>Cerrar</i>
+          <i onClick={'/'}>Cerrar</i>
         </div>
         <div className={styles.formList}>
           <label htmlFor="">Ejecicio</label>
