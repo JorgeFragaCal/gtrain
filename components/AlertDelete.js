@@ -1,4 +1,4 @@
-import styles from "../styles/AlertDelete.module.scss";
+import styles from "styles/AlertDelete.module.scss";
 function AlertDelete() {
   return (
     <div className={`${styles.container} ${styles.active}`}>

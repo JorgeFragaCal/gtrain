@@ -1,4 +1,4 @@
-import styles from "../../styles/User.module.scss";
+import styles from "styles/User.module.scss";
 
 function UserInfo() {
   return (

@@ -4,20 +4,17 @@
     gap: 1rem;
     grid-template-rows: auto auto 1fr;
     padding: 2rem;
-}
-.containerUser {
-    display: grid;
-    gap: 1rem;
-    grid-template-rows: auto auto auto 1fr;
-    padding: 2rem;
-}
-.containerContentFilter{
-    display: grid;
-    gap: 1rem;
-    grid-template-rows: auto 1fr;
-}
-.containerButtons{
-    display: grid;
-    grid-template-columns: 1fr 1fr 5fr;
-    gap: 1rem;
+    &__user{
+        grid-template-rows: auto auto auto 1fr;
+
+    }
+    &__filter{
+        grid-template-rows: auto 1fr;
+        padding: 0;
+    }
+    &__buttons{
+        grid-template-columns: auto auto 1fr;
+        padding: 0;
+
+    }
 }

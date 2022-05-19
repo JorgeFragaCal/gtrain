@@ -2,10 +2,10 @@ import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import Sidebar from "../components/Sidebar/Sidebar";
 import dataMenu from "../data/menu.json";
-import Form from "../components/form/Form";
+import { withAuthUser, AuthAction } from "next-firebase-auth";
 
-export default function Home() {
-  console.log(dataMenu.navItems[0].page_01);
+
+const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -27,4 +27,7 @@ export default function Home() {
       </main>
     </div>
   );
-}
+};
+export default withAuthUser({
+  whenUnauthedAfterInit: AuthAction.REDIRECT_TO_LOGIN,
+})(Home);

@@ -1,6 +1,6 @@
-import styles from "../../styles/Card.module.scss";
+import styles from "styles/Card.module.scss";
 
-import AlertDelete from "../AlertDelete";
+import AlertDelete from "components/AlertDelete";
 
 function CardWods({ data }) {
   return (

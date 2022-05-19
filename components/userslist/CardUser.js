@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
+
+
 import styles from "../../styles/CardUser.module.scss";
 
 function CardUser({ data }) {
+
   return (
     <Link href={`/usuario/${data.id}`}>
       <a>
@@ -24,5 +27,4 @@ function CardUser({ data }) {
     </Link>
   );
 }
-
-export default CardUser;
+export default (CardUser);

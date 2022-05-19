@@ -1,4 +1,5 @@
 @import 'theme.scss';
+@import 'mixins.scss';
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -18,37 +19,8 @@
     }
 }
 .gridUserWods {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(276px, 1fr));
     max-height: 60vh;
-    overflow-y: auto;
-    padding-right: 1rem;
-    &::-webkit-scrollbar {
-            width: 0.5rem;
-    }
-    /* Track */
-    &::-webkit-scrollbar-track {
-        background: $color-grey;
-        border-radius: 25px;
-        -webkit-border-radius: 25px;
-        -moz-border-radius: 25px;
-        -ms-border-radius: 25px;
-        -o-border-radius: 25px;
-    }
-    /* Handle */
-    &::-webkit-scrollbar-thumb {
-        background: $color-darkgrey;
-        border-radius: 25px;
-        -webkit-border-radius: 25px;
-        -moz-border-radius: 25px;
-        -ms-border-radius: 25px;
-        -o-border-radius: 25px;
-    }
-    /* Handle on hover */
-    &::-webkit-scrollbar-thumb:hover {
-        background: $color-darkgrey;
-    }
+    @include grid_scroll();
     .imgWod{
         height: 272px;
         justify-self: center;

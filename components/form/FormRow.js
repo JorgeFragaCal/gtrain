@@ -1,4 +1,4 @@
-import data from "../../data/lista_ejercicios.json";
+import data from "data/lista_ejercicios.json";
 function FormRow() {
   return (
     <>

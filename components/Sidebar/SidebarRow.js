@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 
-import styles from "../../styles/Sidebar.module.scss";
+import styles from "styles/Sidebar.module.scss";
 
 import Image from "next/image";
 import Link from "next/link";

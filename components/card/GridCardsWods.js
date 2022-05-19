@@ -1,8 +1,8 @@
-import wodsList from "../../data/lista_wods.json";
+import wodsList from "data/lista_wods.json";
 
-import styles from "../../styles/Card.module.scss";
+import styles from "styles/Card.module.scss";
 
-import CardWods from "./CardWods";
+import CardWods from "components/card/CardWods";
 
 function GridCardsWods() {
   return (

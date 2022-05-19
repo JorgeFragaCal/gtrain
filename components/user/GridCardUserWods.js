@@ -1,6 +1,6 @@
-import styles from "../../styles/User.module.scss";
+import styles from "styles/User.module.scss";
 
-import UserWods from "./UserWods";
+import UserWods from "components/user/UserWods";
 
 function GridCardUserWods() {
   const a = ["a", "a", "a", "a", "a", "a", "a", "a", "a", "a"];

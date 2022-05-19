@@ -1,8 +1,8 @@
-import styles from "../../styles/User.module.scss";
+import styles from "styles/User.module.scss";
 
-import Calendar from "./Calendar";
-import Char from "./Char";
-import UserInfo from "./UserInfo";
+import Calendar from "components/user/Calendar";
+import Char from "components/user/Char";
+import UserInfo from "components/user/UserInfo";
 
 function TopUser() {
   return (

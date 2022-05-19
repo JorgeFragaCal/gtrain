@@ -1,6 +1,6 @@
-import FormRow from "./FormRow";
-import styles from "../../styles/Form.module.scss";
-import Button from "../atoms/Button";
+import FormRow from "components/form/FormRow";
+import styles from "styles/Form.module.scss";
+import Button from "components/atoms/Button";
 function Form() {
   const listaEjercicos = [
     {

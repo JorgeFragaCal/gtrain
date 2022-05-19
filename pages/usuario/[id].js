@@ -16,7 +16,7 @@ function Usuario() {
         navItems={dataMenu.navItems[2].page_03}
         user={dataMenu.user}
       />
-      <section className={styles.containerUser}>
+      <section className={`${styles.container} ${styles.container__user}`}>
         <Top title={"Nombre Usuario"} />
         <TopUser />
         <Filter />

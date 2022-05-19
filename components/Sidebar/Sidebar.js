@@ -1,8 +1,15 @@
-import SidebarRow from "./SidebarRow";
+import styles from "styles/Sidebar.module.scss";
+
+import { useAuthUser, withAuthUser } from "next-firebase-auth";
+
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../../styles/Sidebar.module.scss";
+
+import SidebarRow from "components/sidebar/SidebarRow";
+import { googleSignOut } from "components/auth/FirebaseAuth";
+
 function Sidebar({ modules, navItems, user }) {
+  const AuthUser = useAuthUser();
   return (
     <aside className={styles.navigation}>
       <div className={styles.moduleBar}>
@@ -35,13 +42,14 @@ function Sidebar({ modules, navItems, user }) {
             alt="Settings"
             width="40"
             height="40"
+            onClick={googleSignOut}
           />
         </div>
       </div>
       <div className={styles.moduleNav}>
         <div className={styles.moduleNavUserInfo}>
           <Image src={`/${user.img}`} alt="Settings" width="50" height="50" />
-          <span>{user.name}</span>
+          <span>{AuthUser.displayName}</span>
         </div>
         {navItems.map((i) => (
           <SidebarRow
@@ -57,4 +65,4 @@ function Sidebar({ modules, navItems, user }) {
   );
 }
 
-export default Sidebar;
+export default withAuthUser()(Sidebar);
