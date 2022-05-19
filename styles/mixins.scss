@@ -36,3 +36,17 @@
       background: $color-darkgrey;
     }
 }
+@mixin button ($background,$color,$font-weight,$border) {
+  align-items: center;
+  background: $background;
+  border-radius: 5px;
+  border: $border;
+  color: $color;
+  cursor: pointer;
+  display: flex;
+  font-size: $font-size-18;
+  font-weight: $font-weight;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+}

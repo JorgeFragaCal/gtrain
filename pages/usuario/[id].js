@@ -1,5 +1,7 @@
 import dataMenu from "../../data/menu.json";
 
+import { withAuthUser, AuthAction } from "next-firebase-auth";
+
 import styles from "../../styles/Layout.module.scss";
 
 import Filter from "../../components/Filter";
@@ -26,4 +28,6 @@ function Usuario() {
   );
 }
 
-export default Usuario;
+export default withAuthUser({
+  whenUnauthedAfterInit: AuthAction.REDIRECT_TO_LOGIN,
+})(Usuario);

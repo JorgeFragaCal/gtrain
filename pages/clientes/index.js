@@ -2,6 +2,8 @@ import dataMenu from "../../data/menu.json";
 
 import styles from "../../styles/Layout.module.scss";
 
+import { withAuthUser, AuthAction } from "next-firebase-auth";
+
 import Filter from "../../components/Filter";
 import GridCardsUsers from "../../components/userslist/GridCardUser";
 import Sidebar from "../../components/Sidebar/Sidebar";
@@ -24,4 +26,6 @@ function Usuarios() {
   );
 }
 
-export default Usuarios;
+export default withAuthUser({
+  whenUnauthedAfterInit: AuthAction.REDIRECT_TO_LOGIN,
+})(Usuarios);

@@ -1,7 +1,11 @@
 import styles from "styles/Button.module.scss";
-function Button({ text, type, onClick }) {
+import Image from "next/image";
+
+function Button({ text, type, onClick, icon }) {
+  console.log(icon);
   return (
     <button onClick={onClick} className={styles[type]}>
+      {icon ? <Image alt="" src={icon} width="40" height="40"></Image> : null}
       {text}
     </button>
   );

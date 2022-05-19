@@ -23,7 +23,9 @@ const Home = () => {
           navItems={dataMenu.navItems[0].page_01}
           user={dataMenu.user}
         />
-        <section></section>
+        <section>
+          En costruccion
+        </section>
       </main>
     </div>
   );

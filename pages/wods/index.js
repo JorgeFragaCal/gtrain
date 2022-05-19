@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import dataMenu from "../../data/menu.json";
 import styles from "../../styles/Layout.module.scss";
 
+import { withAuthUser, AuthAction } from "next-firebase-auth";
+
 import Button from "../../components/atoms/Button";
 import Filter from "../../components/Filter";
 import Form from "../../components/form/Form";
@@ -27,7 +29,7 @@ function WodsList() {
         {isOpen === true ? <Form /> : null}
         <div className={`${styles.container} ${styles.container__buttons}`}>
           <Button onClick={openForm} text={"Crear WOD"} type={"primary"} />
-          <Button text={"Planificar Entrenos"} type={"primary"} />
+          <Button text={"Planificar Entrenos"} type={"primary"}/>
         </div>
         <section className={`${styles.container} ${styles.container__filter}`}>
           <Filter />
@@ -38,4 +40,6 @@ function WodsList() {
   );
 }
 
-export default WodsList;
+export default withAuthUser({
+  whenUnauthedAfterInit: AuthAction.REDIRECT_TO_LOGIN,
+}) (WodsList);

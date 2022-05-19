@@ -62,8 +62,9 @@ const FirebaseAuth = () => {
       {renderAuth ? (
         <Button
           onClick={googleSignIn}
-          text={"Login con Google"}
-          type={"primary"}
+          text={"Entrar con Google"}
+          type={"secondary"}
+          icon={"/logo-google.png"}
         />
       ) : null}
     </div>
