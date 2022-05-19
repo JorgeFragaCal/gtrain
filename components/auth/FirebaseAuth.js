@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import {
+  GoogleAuthProvider,
+  getAuth,
+  signInWithPopup,
+  signOut,
+} from "firebase/auth";
 import Button from "components/atoms/Button";
 /*
 const firebaseAuthConfig = {
@@ -36,7 +41,8 @@ const googleSignIn = () => {
       console.log(errorMessage);
     });
 };
-const googleSignOut = () => {
+export const googleSignOut = () => {
+  const auth = getAuth();
   signOut(auth)
     .then(() => {
       console.log("Signout Succesfull");

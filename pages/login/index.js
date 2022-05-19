@@ -18,5 +18,5 @@ function Login() {
 }
 
 export default withAuthUser({
- // whenAuthed: AuthAction.REDIRECT_TO_APP,
+ whenAuthed: AuthAction.REDIRECT_TO_APP,
 })(Login);
