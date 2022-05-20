@@ -2,14 +2,55 @@
    "list_of_users":[
       {
          "id":"ay2642",
-         "type":"",
-         "image":"https://minimaltoolkit.com/images/randomdata/male/94.jpg",
+         "type":"client",
+         "image":"https://minimaltoolkit.com/images/randomdata/male/",
          "name":"Jorge ",
          "second_name":"Fraga Cal",
+         "age":"24",
+         "condition":"",
+         "email":"email997@gmail.com",
+         "mobile_number":"666 666 666",
+         "created_at":"",
+         "update_at":"",
+         "direction":"",
+         "payments":[
+            {
+               "state":"",
+               "product":"",
+               "price":"",
+               "day":"",
+               "time":""
+            }
+         ],
+         "bonos":"12",
+         "reservations":[
+            {
+               "day":"",
+               "time":"",
+               "state":""
+            }
+         ],
+         "exercices":[
+            {
+               "name":"",
+               "score":[
+                  {
+                     "date":"",
+                     "weigth":""
+                  }
+               ]
+            }
+         ]
+      },{
+         "id":"",
+         "type":"",
+         "image":"https://minimaltoolkit.com/images/randomdata/male/",
+         "name":"Alejandro",
+         "second_name":"Atienza Zorrilla",
          "age":"",
          "condition":"",
          "username":"",
-         "email":"jorge.fraga1997@gmail.com",
+         "email":"email997@gmail.com",
          "mobile_number":"666 666 666",
          "created_at":"",
          "update_at":"",
@@ -45,13 +86,13 @@
       },{
          "id":"",
          "type":"",
-         "image":"https://minimaltoolkit.com/images/randomdata/male/94.jpg",
-         "name":"Jorge ",
-         "second_name":"Fraga Cal",
+         "image":"https://minimaltoolkit.com/images/randomdata/male/",
+         "name":"Bernardo",
+         "second_name":"Olivera Calvet",
          "age":"",
          "condition":"",
          "username":"",
-         "email":"jorge.fraga1997@gmail.com",
+         "email":"email997@gmail.com",
          "mobile_number":"666 666 666",
          "created_at":"",
          "update_at":"",
@@ -87,13 +128,13 @@
       },{
          "id":"",
          "type":"",
-         "image":"https://minimaltoolkit.com/images/randomdata/male/94.jpg",
-         "name":"Jorge ",
-         "second_name":"Fraga Cal",
+         "image":"https://minimaltoolkit.com/images/randomdata/male/",
+         "name":"Jonatan",
+         "second_name":"Balaguer Larrea",
          "age":"",
          "condition":"",
          "username":"",
-         "email":"jorge.fraga1997@gmail.com",
+         "email":"email997@gmail.com",
          "mobile_number":"666 666 666",
          "created_at":"",
          "update_at":"",
@@ -129,13 +170,13 @@
       },{
          "id":"",
          "type":"",
-         "image":"https://minimaltoolkit.com/images/randomdata/male/94.jpg",
-         "name":"Jorge ",
-         "second_name":"Fraga Cal",
+         "image":"https://minimaltoolkit.com/images/randomdata/male/",
+         "name":"Néstor",
+         "second_name":"Estrada",
          "age":"",
          "condition":"",
          "username":"",
-         "email":"jorge.fraga1997@gmail.com",
+         "email":"email997@gmail.com",
          "mobile_number":"666 666 666",
          "created_at":"",
          "update_at":"",
@@ -171,13 +212,13 @@
       },{
          "id":"",
          "type":"",
-         "image":"https://minimaltoolkit.com/images/randomdata/male/94.jpg",
-         "name":"Jorge ",
-         "second_name":"Fraga Cal",
+         "image":"https://minimaltoolkit.com/images/randomdata/male/",
+         "name":"Felipe ",
+         "second_name":"Galvez-Zabaleta",
          "age":"",
          "condition":"",
          "username":"",
-         "email":"jorge.fraga1997@gmail.com",
+         "email":"email997@gmail.com",
          "mobile_number":"666 666 666",
          "created_at":"",
          "update_at":"",
@@ -213,55 +254,13 @@
       },{
          "id":"",
          "type":"",
-         "image":"https://minimaltoolkit.com/images/randomdata/male/94.jpg",
-         "name":"Jorge ",
-         "second_name":"Fraga Cal",
+         "image":"https://minimaltoolkit.com/images/randomdata/male/",
+         "name":"Édgar ",
+         "second_name":"Pizarro Almazán",
          "age":"",
          "condition":"",
          "username":"",
-         "email":"jorge.fraga1997@gmail.com",
-         "mobile_number":"666 666 666",
-         "created_at":"",
-         "update_at":"",
-         "direction":"",
-         "payments":[
-            {
-               "state":"",
-               "product":"",
-               "price":"",
-               "day":"",
-               "time":""
-            }
-         ],
-         "bonos":"",
-         "reservations":[
-            {
-               "day":"",
-               "time":"",
-               "state":""
-            }
-         ],
-         "exercices":[
-            {
-               "name":"",
-               "score":[
-                  {
-                     "date":"",
-                     "weigth":""
-                  }
-               ]
-            }
-         ]
-      },{
-         "id":"",
-         "type":"",
-         "image":"https://minimaltoolkit.com/images/randomdata/male/94.jpg",
-         "name":"Jorge ",
-         "second_name":"Fraga Cal",
-         "age":"",
-         "condition":"",
-         "username":"",
-         "email":"jorge.fraga1997@gmail.com",
+         "email":"email997@gmail.com",
          "mobile_number":"666 666 666",
          "created_at":"",
          "update_at":"",

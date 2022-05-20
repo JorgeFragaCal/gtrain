@@ -10,6 +10,7 @@ import { googleSignOut } from "components/auth/FirebaseAuth";
 
 function Sidebar({ modules, navItems, user }) {
   const AuthUser = useAuthUser();
+  console.log(AuthUser.photoURL);
   return (
     <aside className={styles.navigation}>
       <div className={styles.moduleBar}>
@@ -48,7 +49,15 @@ function Sidebar({ modules, navItems, user }) {
       </div>
       <div className={styles.moduleNav}>
         <div className={styles.moduleNavUserInfo}>
-          <Image src={`/${user.img}`} alt="Settings" width="50" height="50" />
+          {AuthUser.photoURL ? (
+            <Image
+              src={AuthUser.photoURL}
+              alt="Settings"
+              width="50"
+              height="50"
+            />
+          ) : null
+          }
           <span>{AuthUser.displayName}</span>
         </div>
         {navItems.map((i) => (
