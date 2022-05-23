@@ -1,22 +1,30 @@
 import styles from "styles/User.module.scss";
 
-function UserInfo() {
+import { useAuthUser, withAuthUser } from "next-firebase-auth";
+import Image from "next/image";
+
+function UserInfo({user}) {
+  const AuthUser = useAuthUser();
   return (
     <section className={styles.userInfo}>
       <div>
-        <img
-          src="https://minimaltoolkit.com/images/randomdata/male/94.jpg"
-          alt=""
-        />
+        {AuthUser.photoURL ? (
+          <Image
+            src={AuthUser.photoURL}
+            alt="Settings"
+            width="125"
+            height="125"
+          />
+        ) : null}
         <i>Editar</i>
         <i>Eliminar</i>
       </div>
       <div>
-        <h3>Nombre</h3>
-        <p>email</p>
-        <p>telefono</p>
+        <h3>{AuthUser.displayName}</h3>
+        <p>{AuthUser.email}</p>
+        <p>{AuthUser.phoneNumber}</p>
         <p>Nº de Reservas disponibles</p>
-        <p>5/10</p>
+        <p>{user.bonos}/10</p>
       </div>
     </section>
   );

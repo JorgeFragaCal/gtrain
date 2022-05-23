@@ -1,8 +1,7 @@
-import styles from "styles/User.module.scss";
+import styles from "../../styles/User.module.scss";
 
-function UserWods({ disable, alert }) {
-  const img =
-    "https://hips.hearstapps.com/ame-prod-menshealth-assets.s3.amazonaws.com/main/assets/deadlift.gif?crop=0.765xw:1.00xh;0.169xw,0&resize=320:*";
+function UserWods({ disable, alert,img }) {
+
   return (
     <div
       className={`${styles.imgWod}

@@ -4,10 +4,10 @@ import Calendar from "components/user/Calendar";
 import Char from "components/user/Char";
 import UserInfo from "components/user/UserInfo";
 
-function TopUser() {
+function TopUser({user}) {
   return (
     <section className={styles.container}>
-      <UserInfo />
+      <UserInfo user={user}/>
       <Calendar />
       <Char />
     </section>

@@ -7,7 +7,6 @@ import styles from "styles/CardUser.module.scss";
 
 function CardUser({ data }) {
 const number = Math.floor(Math.random()*100);
-console.log(number);
   return (
     <Link href={`/usuario/${data.id}`}>
       <a>

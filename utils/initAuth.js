@@ -1,4 +1,10 @@
 import { init } from "next-firebase-auth";
+import {
+  GoogleAuthProvider,
+  getAuth,
+  signInWithPopup,
+  signOut,
+} from "firebase/auth";
 
 const initAuth = () => {
   init({
@@ -44,3 +50,33 @@ const initAuth = () => {
 };
 
 export default initAuth;
+
+export const googleSignIn = () => {
+  const auth = getAuth();
+  const provider = new GoogleAuthProvider();
+
+  signInWithPopup(auth, provider)
+    .then((result) => {
+      // The signed-in user info.
+      const user = result.user;
+      console.log("Login!!!");
+    })
+    .catch((error) => {
+      // Handle Errors here.
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorCode);
+      console.log(errorMessage);
+    });
+};
+
+export const googleSignOut = () => {
+  const auth = getAuth();
+  signOut(auth)
+    .then(() => {
+      console.log("Signout Succesfull");
+    })
+    .catch((error) => {
+      console.log("Signout Failed" + error);
+    });
+};

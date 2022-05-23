@@ -6,11 +6,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 import SidebarRow from "components/sidebar/SidebarRow";
-import { googleSignOut } from "components/auth/FirebaseAuth";
+import { googleSignOut } from "utils/initAuth";
 
 function Sidebar({ modules, navItems, user }) {
   const AuthUser = useAuthUser();
-  console.log(AuthUser.photoURL);
   return (
     <aside className={styles.navigation}>
       <div className={styles.moduleBar}>
