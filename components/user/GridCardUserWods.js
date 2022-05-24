@@ -30,7 +30,7 @@ function GridCardUserWods({ exercices }) {
   return (
     <section className={styles.gridUserWods}>
       {exercices.map((i) => (
-        <UserWods key={i} disable={disable} alert={alert} img={i.image}/>
+        <UserWods key={i} disable={disable} alert={alert} img={i.image} name={i.name} score={i.score}/>
       ))}
     </section>
   );

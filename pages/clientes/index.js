@@ -19,7 +19,7 @@ function Usuarios() {
       />
       <section className={styles.container}>
         <Top title={"Usuarios"} />
-        <Filter />
+        <Filter filtros={['Nuevos','Activos','Inactivos']}/>
         <GridCardsUsers />
       </section>
     </main>

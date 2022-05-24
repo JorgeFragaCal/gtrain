@@ -4,12 +4,16 @@
     max-height: 82vh;
     @include grid_scroll();
     grid-template-columns: repeat(auto-fill, minmax(192px, 1fr));
+    a{
+        max-height: 320px;
+    }
 }
 
 .card {
     border: 1px solid $border-color;
     padding: 1rem;
     text-align: center;
+    height: 320px;
     img{
     border-radius: $border-radius-img;
     -webkit-border-radius: $border-radius-img;

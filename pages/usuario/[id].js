@@ -50,6 +50,8 @@ function Usuario() {
     }
   }, [id]);
 
+  const filtros=['Dominados','Sin practicar','No aprendidas']
+
   return (
     <main>
       <Sidebar
@@ -59,9 +61,9 @@ function Usuario() {
       />
 
       <section className={`${styles.container} ${styles.container__user}`}>
-        <Top title={"Nombre Usuario"} />
+        <Top title={"Perfil de Cliente"} />
         <TopUser user={user} />
-        <Filter />
+        <Filter filtros={filtros} />
         <GridCardUserWods exercices={user.exercices} />
       </section>
     </main>

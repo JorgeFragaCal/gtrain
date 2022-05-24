@@ -1,0 +1,36 @@
+@import 'theme.scss';
+.container{
+  justify-self: center;
+}
+.charContainer{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 1rem;
+  text-align: -webkit-center;
+  gap: 1rem;
+
+}
+.columnChart{
+  background-color:$color-grey ;
+  height: 250px;
+  width: 30px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+          position: relative;
+}
+.columnProgres {
+  background-color: $color-darkgrey;
+  content: '';
+  height: 150px;
+  width: 30px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  position: absolute;
+    bottom: 0;
+}

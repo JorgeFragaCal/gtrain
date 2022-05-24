@@ -3,7 +3,7 @@ import styles from "styles/User.module.scss";
 import { useAuthUser, withAuthUser } from "next-firebase-auth";
 import Image from "next/image";
 
-function UserInfo({user}) {
+function UserInfo({ user }) {
   const AuthUser = useAuthUser();
   return (
     <section className={styles.userInfo}>
@@ -16,15 +16,21 @@ function UserInfo({user}) {
             height="125"
           />
         ) : null}
-        <i>Editar</i>
-        <i>Eliminar</i>
+        <div className={styles.icons}>
+          <i>Editar</i>
+          <i>Eliminar</i>
+        </div>
       </div>
       <div>
         <h3>{AuthUser.displayName}</h3>
         <p>{AuthUser.email}</p>
         <p>{AuthUser.phoneNumber}</p>
-        <p>Nº de Reservas disponibles</p>
+        <strong>Nº de Reservas disponibles</strong>
         <p>{user.bonos}/10</p>
+        <strong>Dirección</strong>
+        <p>{user.direction}</p>
+        <strong>Condición</strong>
+        <p>{user.condition}</p>
       </div>
     </section>
   );

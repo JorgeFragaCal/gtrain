@@ -29,10 +29,10 @@ function WodsList() {
         {isOpen === true ? <Form /> : null}
         <div className={`${styles.container} ${styles.container__buttons}`}>
           <Button onClick={openForm} text={"Crear WOD"} type={"primary"} />
-          <Button text={"Planificar Entrenos"} type={"primary"}/>
+          <Button text={"Planificar Entrenos"} type={"primary"} />
         </div>
         <section className={`${styles.container} ${styles.container__filter}`}>
-          <Filter />
+          <Filter filtros={[]} />
           <GridCardsWods />
         </section>
       </section>
