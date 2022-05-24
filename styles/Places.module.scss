@@ -1,0 +1,27 @@
+@import 'theme.scss';
+@import 'mixins.scss';
+.container{
+  @include card();
+  @include grid_scroll();
+  max-height: 44vh;
+  display: grid;
+}
+.rowContainer{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.time{
+
+
+}
+.places{
+  background-color: $color-grey;
+  width: 200px;
+
+  .placesProgress{
+    padding: 1rem;
+    color:$color-white;
+    background-color: $color-purple;
+  }
+}

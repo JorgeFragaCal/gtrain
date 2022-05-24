@@ -1,8 +1,209 @@
 {
   "calendar":[
     {
-      "day":"",
-      "wod":"",
+      "day":"lunes",
+      "wod":{
+         "id":1,
+         "name":"",
+         "time":"20",
+         "rounds":"7",
+         "exercise":[
+            {
+               "id":1,
+               "name":"burpee",
+               "reps":"7",
+               "weigth":""
+            },
+            {
+               "id":2,
+               "name":"air squads",
+               "reps":"7",
+               "weigth":"30"
+            },
+            {
+               "id":3,
+               "name":"push ups",
+               "reps":"7",
+               "weigth":""
+            },
+            {
+               "id":4,
+               "name":"handstand push ups",
+               "reps":"7",
+               "weigth":""
+            },
+            {
+               "id":5,
+               "name":"thrusters",
+               "reps":"7",
+               "weigth":""
+            }
+         ]
+      },
+      "clients":[]
+    },{
+      "day":"martes",
+      "wod":{
+         "id":1,
+         "name":"",
+         "time":"20",
+         "rounds":"7",
+         "exercise":[
+            {
+               "id":1,
+               "name":"burpee",
+               "reps":"7",
+               "weigth":""
+            },
+            {
+               "id":2,
+               "name":"air squads",
+               "reps":"7",
+               "weigth":"30"
+            },
+            {
+               "id":3,
+               "name":"push ups",
+               "reps":"7",
+               "weigth":""
+            },
+            {
+               "id":4,
+               "name":"handstand push ups",
+               "reps":"7",
+               "weigth":""
+            },
+            {
+               "id":5,
+               "name":"thrusters",
+               "reps":"7",
+               "weigth":""
+            }
+         ]
+      },
+      "clients":[]
+    },{
+      "day":"miercoles",
+      "wod":{
+         "id":1,
+         "name":"",
+         "time":"20",
+         "rounds":"7",
+         "exercise":[
+            {
+               "id":1,
+               "name":"burpee",
+               "reps":"7",
+               "weigth":""
+            },
+            {
+               "id":2,
+               "name":"air squads",
+               "reps":"7",
+               "weigth":"30"
+            },
+            {
+               "id":3,
+               "name":"push ups",
+               "reps":"7",
+               "weigth":""
+            },
+            {
+               "id":4,
+               "name":"handstand push ups",
+               "reps":"7",
+               "weigth":""
+            },
+            {
+               "id":5,
+               "name":"thrusters",
+               "reps":"7",
+               "weigth":""
+            }
+         ]
+      },
+      "clients":[]
+    },{
+      "day":"jueves",
+      "wod":{
+         "id":1,
+         "name":"amanda",
+         "time":"20",
+         "rounds":"7",
+         "exercise":[
+            {
+               "id":1,
+               "name":"burpee",
+               "reps":"7",
+               "weigth":""
+            },
+            {
+               "id":2,
+               "name":"air squads",
+               "reps":"7",
+               "weigth":"30"
+            },
+            {
+               "id":3,
+               "name":"push ups",
+               "reps":"7",
+               "weigth":""
+            },
+            {
+               "id":4,
+               "name":"handstand push ups",
+               "reps":"7",
+               "weigth":""
+            },
+            {
+               "id":5,
+               "name":"thrusters",
+               "reps":"7",
+               "weigth":""
+            }
+         ]
+      },
+      "clients":[]
+    },{
+      "day":"viernes",
+      "wod":{
+         "id":1,
+         "name":"",
+         "time":"20",
+         "rounds":"7",
+         "exercise":[
+            {
+               "id":1,
+               "name":"burpee",
+               "reps":"7",
+               "weigth":""
+            },
+            {
+               "id":2,
+               "name":"air squads",
+               "reps":"7",
+               "weigth":"30"
+            },
+            {
+               "id":3,
+               "name":"push ups",
+               "reps":"7",
+               "weigth":""
+            },
+            {
+               "id":4,
+               "name":"handstand push ups",
+               "reps":"7",
+               "weigth":""
+            },
+            {
+               "id":5,
+               "name":"thrusters",
+               "reps":"7",
+               "weigth":""
+            }
+         ]
+      },
       "clients":[]
     }
   ]

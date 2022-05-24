@@ -19,3 +19,9 @@
 
     }
 }
+.bottonContainer {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+}

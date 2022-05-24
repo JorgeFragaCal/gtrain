@@ -1,0 +1,38 @@
+@import 'mixins.scss';
+@import 'theme.scss';
+.container{
+  @include card();
+  @include grid_scroll();
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  max-height: 44vh;
+  row-gap: 1rem;
+
+}
+.listRow{
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-count: 2;
+  gap: 1rem;
+
+  border-bottom: $border;
+  padding-bottom: 1rem;
+}
+.condition{
+  padding: 0.25rem;
+  text-align: center;
+}
+.Nueva{
+  color: $color-succesfull;
+  background-color: #A4E6D6;
+}
+.Lesionado {
+  color: $color-cancel;
+  background-color: #FFD2DD;
+}
+.Senior {
+  color: $color-pending;
+  background-color: #FFE6B9;
+}

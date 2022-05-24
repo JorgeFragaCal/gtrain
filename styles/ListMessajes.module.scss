@@ -1,0 +1,19 @@
+@import 'mixins.scss';
+@import 'theme.scss';
+
+.container {
+  @include card();
+  @include grid_scroll();
+  max-height: 44vh;
+}
+
+.listRow {
+  align-items: center;
+  border-bottom: $border;
+  padding-bottom: 1rem;
+}
+
+
+.cancelado {
+  color: $color-cancel;
+}

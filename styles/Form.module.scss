@@ -1,4 +1,5 @@
 @import 'theme.scss';
+@import 'mixins.scss';
 .container{
     background-color: $color-white;
     box-shadow: $box-shadows;
@@ -31,15 +32,9 @@
         }
     }
     .formFieldset input,.formFieldset select,.formTop input,.formFooter input{
-        border: 1px solid $border-color;
-        border-radius: $border-radius-box;
+        @include card();
         font-size: $font-size-18;
-        padding: 1rem;
         width: 100%;
-        -webkit-border-radius: $border-radius-box;
-        -moz-border-radius: $border-radius-box;
-        -ms-border-radius: $border-radius-box;
-        -o-border-radius: $border-radius-box;
     }
     .formFooter {
         border: none;

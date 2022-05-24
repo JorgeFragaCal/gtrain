@@ -9,7 +9,7 @@
     }
     #buscador{
         border: none;
-        border-bottom: 1px solid $border-color;
+        border-bottom: $border;
         width: 150px;
         &:focus-visible {
             outline: none;

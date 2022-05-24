@@ -10,8 +10,7 @@
 }
 
 .card {
-    border: 1px solid $border-color;
-    padding: 1rem;
+    @include card();
     text-align: center;
     height: 320px;
     img{

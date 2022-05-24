@@ -1,33 +1,27 @@
 @import 'theme.scss';
 @import 'mixins.scss';
+.listCards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
 .gridCards{
     max-height: 74vh;
     @include grid_scroll();
 }
+
 .card{
     display: grid;
     grid-template-rows: 1fr auto;
 
     .cardContent{
-        border: 1px solid $border-color;
-        border-radius: $border-radius-box;
-        -webkit-border-radius: $border-radius-box;
-        -moz-border-radius: $border-radius-box;
-        -ms-border-radius: $border-radius-box;
-        -o-border-radius: $border-radius-box;
-        padding: 1rem;
+        @include card();
 
         .cardTop{
             display: flex;
             justify-content: space-between;
 
-            .cardTitle{
-                font-size: $font-size-24;
-                font-weight: bold;
-                margin: 0;
-                text-transform: uppercase;
-                margin-bottom: 1rem;
-            }
+
             .cardIcons {
                 & i{
                     padding-left: 0.5rem;
@@ -41,11 +35,34 @@
             }
         }
     }
+    .cardTitle {
+        font-size: $font-size-24;
+        font-weight: bold;
+        margin: 0;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        }
     .cardFooter{
+        @include card();
         display: flex;
         justify-content: space-between;
-        padding: 1rem;
-        border: 1px solid $border-color;
         border-top:none;
+    }
+}
+.destacado {
+    background-color: #FB8500;
+    color: $color-white;
+    box-shadow: 0px 0px 20px #FB8500;
+    border-radius: $border-radius-box;
+    -webkit-border-radius: $border-radius-box;
+    -moz-border-radius: $border-radius-box;
+    -ms-border-radius: $border-radius-box;
+    -o-border-radius: $border-radius-box;
+
+    .cardContent {
+        border: none;
+    }
+    .cardFooter{
+        border: none;
     }
 }
