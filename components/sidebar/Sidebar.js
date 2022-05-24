@@ -55,9 +55,12 @@ function Sidebar({ modules, navItems, user }) {
               width="50"
               height="50"
             />
-          ) : null
-          }
-          <span>{AuthUser.displayName}</span>
+          ) : null}
+          <span>
+            <Link href={`/usuario/${AuthUser.id}`}>
+              <a>{AuthUser.displayName}</a>
+            </Link>
+          </span>
         </div>
         {navItems.map((i) => (
           <SidebarRow

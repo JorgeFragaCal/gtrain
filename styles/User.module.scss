@@ -16,7 +16,11 @@
            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
            -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
        }
+       .userImage img{
+          z-index: 2;
+       }
        .icons{
+           margin-top: 0.5rem;
            display: flex;
            justify-content: space-around;
        }

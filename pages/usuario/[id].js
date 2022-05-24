@@ -35,6 +35,10 @@ function Usuario() {
         .then((data) =>
           setUserInfo({
             id: data.id,
+            name: data.name,
+            photoURL: data.photoURL,
+            email: data.email,
+            phoneNumber: data.phoneNumber,
             age: data.age,
             bonos: data.bonos,
             condition: data.condition,

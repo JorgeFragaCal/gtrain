@@ -1,30 +1,30 @@
 import styles from "styles/User.module.scss";
 
-import { useAuthUser, withAuthUser } from "next-firebase-auth";
 import Image from "next/image";
 
 function UserInfo({ user }) {
-  const AuthUser = useAuthUser();
   return (
     <section className={styles.userInfo}>
-      <div>
-        {AuthUser.photoURL ? (
-          <Image
-            src={AuthUser.photoURL}
-            alt="Settings"
+      <div className={styles.userImage}>
+        {user.photoURL ? (
+          <img
+            src={`https://${user.photoURL}`}
+            alt={user.name}
             width="125"
             height="125"
           />
-        ) : null}
+        ) : (
+          <Image src="/LogoLogin.jpg" alt="Settings" width="125" height="125" />
+        )}
         <div className={styles.icons}>
           <i>Editar</i>
           <i>Eliminar</i>
         </div>
       </div>
       <div>
-        <h3>{AuthUser.displayName}</h3>
-        <p>{AuthUser.email}</p>
-        <p>{AuthUser.phoneNumber}</p>
+        <h3>{user.name}</h3>
+        <p>{user.email}</p>
+        <p>{user.phoneNumber}</p>
         <strong>Nº de Reservas disponibles</strong>
         <p>{user.bonos}/10</p>
         <strong>Dirección</strong>
