@@ -27,3 +27,16 @@ height: 47px;
 .react-calendar__tile{
   font-size: $font-size-18;
 }
+.fc-toolbar-chunk div{
+  display: flex;
+  gap: 1rem;
+}
+button.fc-prev-button.fc-button.fc-button-primary,
+button.fc-next-button.fc-button.fc-button-primary,
+button.fc-prev-button.fc-button.fc-button-primary:active:focus,
+button.fc-next-button.fc-button.fc-button-primary:active:focus{
+  background-color:$color-white ;
+  color: $color-primary;
+  border: none;
+  box-shadow:none;
+}
