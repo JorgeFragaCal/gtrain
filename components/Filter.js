@@ -8,7 +8,7 @@ function Filter({ filtros }) {
       </span>
       <div className={styles.filters}>
         {filtros.map((i) => (
-          <span key={i}>{i} </span>
+          <span key={i}>X {i} </span>
         ))}
       </div>
       <div>Ordenar por:</div>

@@ -1,12 +1,15 @@
-import Head from "next/head";
-import styles from "styles/Home.module.scss";
-import Sidebar from "components/sidebar/Sidebar";
-import dataMenu from "data/menu.json";
 import { withAuthUser, AuthAction } from "next-firebase-auth";
+import dataMenu from "data/menu.json";
+import styles from "styles/Layout.module.scss";
+import Head from "next/head";
+import Filter from "components/Filter";
+import Sidebar from "components/sidebar/Sidebar";
+import Table from "components/table/Table";
+import Top from "components/Top";
 
 const Reservas = () => {
   return (
-    <div className={styles.container}>
+    <div >
       <Head>
         <title>GTrain</title>
         <meta
@@ -15,15 +18,18 @@ const Reservas = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
+     <main>
         <Sidebar
           modules={dataMenu.modules}
           navItems={dataMenu.navItems[2].page_03}
           user={dataMenu.user}
         />
-        <section>En costruccion</section>
-      </main>
+        <section className={styles.container}>
+          <Top title={"Usuarios"} />
+          <Filter filtros={["Hoy", "Semana", "Mes"]} />
+          <Table />
+        </section>
+     </main>
     </div>
   );
 };

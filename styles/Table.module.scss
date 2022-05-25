@@ -1,0 +1,32 @@
+@import 'theme.scss';
+@import 'mixins.scss';
+.container{
+  border: $border;
+  padding:0 1rem;
+  @include grid_scroll();
+  grid-template-columns: 1fr;
+  max-height: 80vh;
+
+}
+.row{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border-bottom: $border;
+  padding: 1rem 0;
+  align-items: center;
+  .user{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .Reservado{
+    color: $color-succesfull;
+    background-color: #A4E6D6;
+    padding:  0.25rem;
+  }
+  .Pendiente {
+    color: $color-pending;
+    background-color: #FFE6B9;
+    padding: 0.25rem;
+  }
+}
