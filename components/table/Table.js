@@ -4,6 +4,7 @@ import styles from "styles/Table.module.scss";
 function Table() {
   const data = [
     {
+      id: 1,
       date: "24/05/2022",
       time: "9:30",
       name: "Adrian Martinez",
@@ -11,6 +12,7 @@ function Table() {
       state: "Pendiente",
     },
     {
+      id: 2,
       date: "24/05/2022",
       time: "9:30",
       name: "Aaron Jiménez",
@@ -18,6 +20,7 @@ function Table() {
       state: "Pendiente",
     },
     {
+      id: 3,
       date: "24/05/2022",
       time: "9:30",
       name: "Estela Pérez",
@@ -25,6 +28,7 @@ function Table() {
       state: "Reservado",
     },
     {
+      id: 4,
       date: "24/05/2022",
       time: "9:30",
       name: "Olga Latorre",
@@ -32,6 +36,7 @@ function Table() {
       state: "Reservado",
     },
     {
+      id: 5,
       date: "24/05/2022",
       time: "9:30",
       name: "Damian Cordon",
@@ -39,6 +44,7 @@ function Table() {
       state: "Reservado",
     },
     {
+      id: 6,
       date: "24/05/2022",
       time: "9:30",
       name: "David Leon",
@@ -46,6 +52,7 @@ function Table() {
       state: "Reservado",
     },
     {
+      id: 7,
       date: "24/05/2022",
       time: "9:30",
       name: "Julian Davila",
@@ -53,6 +60,7 @@ function Table() {
       state: "Reservado",
     },
     {
+      id: 8,
       date: "24/05/2022",
       time: "9:30",
       name: "Ariadna Farre",
@@ -60,6 +68,7 @@ function Table() {
       state: "Reservado",
     },
     {
+      id: 9,
       date: "24/05/2022",
       time: "9:30",
       name: "Jennifer Linares",
@@ -67,6 +76,7 @@ function Table() {
       state: "Reservado",
     },
     {
+      id: 10,
       date: "24/05/2022",
       time: "9:30",
       name: "Roger Pino",
@@ -74,6 +84,7 @@ function Table() {
       state: "Reservado",
     },
     {
+      id: 11,
       date: "24/05/2022",
       time: "9:30",
       name: "Roger Pino",
@@ -85,7 +96,7 @@ function Table() {
     <section className={styles.container}>
       {data.map((e) => (
         <TableRow
-          key={e}
+          key={e.id}
           name={e.name}
           img={e.img}
           state={e.state}

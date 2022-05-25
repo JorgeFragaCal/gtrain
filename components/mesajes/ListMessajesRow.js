@@ -2,7 +2,6 @@ import Image from "next/image";
 import styles from "styles/ListMessajes.module.scss";
 
 function ListMessajesRow({ name, date, time, condition }) {
-  console.log(name, date, time, condition);
   return (
     <div className={styles.listRow}>
       <span>

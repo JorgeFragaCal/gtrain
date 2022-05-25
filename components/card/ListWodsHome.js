@@ -8,7 +8,7 @@ function GridCardsWods() {
   return (
     <section className={styles.listCards}>
       {wodsList.calendar.map((i) => (
-        <CardWods key={i.id} data={i} center={'center'}/>
+        <CardWods key={i.day} data={i} center={'center'}/>
       ))}
     </section>
   );

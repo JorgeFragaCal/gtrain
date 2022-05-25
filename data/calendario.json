@@ -43,6 +43,7 @@
       "clients":[]
     },{
       "day":"martes",
+      "id":2,
       "wod":{
          "id":1,
          "name":"",
@@ -84,6 +85,7 @@
       "clients":[]
     },{
       "day":"miercoles",
+      "id":3,
       "wod":{
          "id":1,
          "name":"",
@@ -125,6 +127,7 @@
       "clients":[]
     },{
       "day":"jueves",
+      "id":4,
       "wod":{
          "id":1,
          "name":"amanda",
@@ -166,6 +169,7 @@
       "clients":[]
     },{
       "day":"viernes",
+      "id":5,
       "wod":{
          "id":1,
          "name":"",

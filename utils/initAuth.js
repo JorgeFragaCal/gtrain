@@ -5,6 +5,17 @@ import {
   signInWithPopup,
   signOut,
 } from "firebase/auth";
+import {
+  query,
+  getDocs,
+  collection,
+  where,
+  setDoc,
+  doc,
+} from "firebase/firestore";
+import { db } from "./client";
+
+import dataExercices from 'data/lista_ejercicios.json'
 
 const initAuth = () => {
   init({
@@ -51,23 +62,35 @@ const initAuth = () => {
 
 export default initAuth;
 
-export const googleSignIn = () => {
+export const googleSignIn = async () => {
   const auth = getAuth();
   const provider = new GoogleAuthProvider();
-
-  signInWithPopup(auth, provider)
-    .then((result) => {
-      // The signed-in user info.
-      const user = result.user;
-      console.log("Login!!!");
-    })
-    .catch((error) => {
-      // Handle Errors here.
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      console.log(errorCode);
-      console.log(errorMessage);
-    });
+  try {
+    const res = await signInWithPopup(auth, provider);
+    const user = res.user;
+    const q = query(collection(db, "usuarios"), where("id", "==", user.uid));
+    const docs = await getDocs(q);
+    if (docs.docs.length === 0) {
+      await setDoc(doc(db, "usuarios", user.uid), {
+        id: user.uid,
+        name: user.displayName,
+        email: user.email,
+        phoneNumber: user.phoneNumber,
+        photoURL: user.photoURL,
+        age: "",
+        bonos: "",
+        condition: "Nuevo",
+        direction: "",
+        exercices: dataExercices,
+        payments: [],
+        reservations: [],
+        type: "Client",
+      });
+    }
+  } catch (err) {
+    console.error(err);
+    alert(err.message);
+  }
 };
 
 export const googleSignOut = () => {

@@ -6,12 +6,25 @@ import Link from "next/link";
 import styles from "styles/CardUser.module.scss";
 
 function CardUser({ data }) {
-const number = Math.floor(Math.random()*100);
   return (
     <Link href={`/usuario/${data.id}`}>
       <a>
         <div className={styles.card}>
-          <img src={`${data.image}${number}.jpg`} width="160" alt={data.name} />
+          {data.photoURL ? (
+            <Image
+              src={`${data.photoURL}`}
+              alt={data.name}
+              width="125"
+              height="125"
+            />
+          ) : (
+            <Image
+              src="/LogoLogin.jpg"
+              alt="Settings"
+              width="125"
+              height="125"
+            />
+          )}
           <h4>
             {data.name}
             {data.second_name}

@@ -26,7 +26,7 @@ const Reservas = () => {
         />
         <section className={styles.container}>
           <Top title={"Usuarios"} />
-          <Filter filtros={["Hoy", "Semana", "Mes"]} />
+          <Filter filtros={["Hoy", "9:30"]} />
           <Table />
         </section>
      </main>

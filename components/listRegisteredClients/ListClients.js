@@ -12,7 +12,7 @@ function ListClients() {
     { name: "Ariadna Farre", img: "/Logo.jpg", condition: "Nueva" },
     { name: "Jennifer Linares", img: "/Logo.jpg", condition: "" },
     { name: "Roger Pino", img: "/Logo.jpg", condition: "Senior" },
-    { name: "Roger Pino", img: "/Logo.jpg", condition: "Senior" },
+    { name: "Roger Pina", img: "/Logo.jpg", condition: "Senior" },
   ];
   return (
     <section>
@@ -20,7 +20,7 @@ function ListClients() {
       <div className={styles.container}>
         {clients.map((i) => (
           <ListClientsRow
-            key={i.img}
+            key={i.name}
             name={i.name}
             img={i.img}
             condition={i.condition}

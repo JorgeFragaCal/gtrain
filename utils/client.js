@@ -8,39 +8,18 @@ const firebaseConfig = {
   projectId: "gtrain-a06c6",
 };
 getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
-const db = getFirestore();
+export const db = getFirestore();
 
-const dbRef = collection(db, "usuarios");
-export const getUsers = async () => {
-  await getDocs(dbRef).then((e) =>
-    console.log(
-      e.docs.map((e) => {
-        return e.data();
-      })
-    )
-  );
-};
-
-export const getUserInfo = (id) => {
-  const userRef = doc(db, "usuarios", id);
-  return getDoc(userRef).then((doc) => {
-    const data = doc.data();
-    return data;
+export const getUsersList = async (data) => {
+  const dbRef = collection(db, data);
+  return await getDocs(dbRef).then((e) => {
+    return e.docs.map((e) => e.data());
   });
 };
 
-/*
-
-const {
-      age,
-      bonos,
-      condition,
-      direction,
-      exercices,
-      image,
-      payments,
-      reservations,
-      type,
-    } = doc.data();
-
-*/
+export const getUserInfo = async (id) => {
+  const userRef = doc(db, "usuarios", id);
+  return await getDoc(userRef).then((doc) => {
+    return doc.data();
+  });
+};

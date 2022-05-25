@@ -7,8 +7,8 @@ function UserInfo({ user }) {
     <section className={styles.userInfo}>
       <div className={styles.userImage}>
         {user.photoURL ? (
-          <img
-            src={`https://${user.photoURL}`}
+          <Image
+            src={`${user.photoURL}`}
             alt={user.name}
             width="125"
             height="125"
@@ -26,7 +26,7 @@ function UserInfo({ user }) {
         <p>{user.email}</p>
         <p>{user.phoneNumber}</p>
         <strong>Nº de Reservas disponibles</strong>
-        <p>{user.bonos}/10</p>
+        <p>{user.bonos}/12</p>
         <strong>Dirección</strong>
         <p>{user.direction}</p>
         <strong>Condición</strong>
