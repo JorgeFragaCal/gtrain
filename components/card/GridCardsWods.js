@@ -1,14 +1,23 @@
-import wodsList from "data/lista_wods.json";
+import { useState, useEffect } from "react";
 
 import styles from "styles/Card.module.scss";
 
 import CardWods from "components/card/CardWods";
+import { getData } from "utils/client";
 
 function GridCardsWods() {
+   const [wodList, setWodList] = useState([]);
+   useEffect(() => {
+     getData("wods")
+       .then((data) => {
+         setWodList(data);
+       })
+       .catch(console.log("mal"));
+   }, []);
   return (
     <section className={styles.gridCards}>
-      {wodsList.list_of_wods.map((i) => (
-        <CardWods key={i.id} data={i} />
+      {wodList.map((i) => (
+        <CardWods key={i.name} data={i} />
       ))}
     </section>
   );

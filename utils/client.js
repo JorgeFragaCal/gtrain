@@ -1,5 +1,14 @@
-import { collection, getDocs, getDoc, doc } from "firebase/firestore";
-import { getFirestore } from "firebase/firestore";
+import {
+  collection,
+  getDocs,
+  addDoc,
+  getDoc,
+  doc,
+  query,
+  where,
+  getFirestore,
+} from "firebase/firestore";
+
 import { initializeApp, getApps, getApp } from "firebase/app";
 
 const firebaseConfig = {
@@ -10,7 +19,7 @@ const firebaseConfig = {
 getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
 export const db = getFirestore();
 
-export const getUsersList = async (data) => {
+export const getData = async (data) => {
   const dbRef = collection(db, data);
   return await getDocs(dbRef).then((e) => {
     return e.docs.map((e) => e.data());
@@ -22,4 +31,18 @@ export const getUserInfo = async (id) => {
   return await getDoc(userRef).then((doc) => {
     return doc.data();
   });
+};
+
+export const addWod = async (data) => {
+  try {
+    const q = query(collection(db, "wods"), where("title", "==", data.title));
+    const docs = await getDocs(q);
+    if (docs.docs.length === 0) {
+      await addDoc(collection(db, "wods"), data);
+      console.log("Wod Añadido");
+    }
+  } catch (err) {
+    console.error(err);
+    alert(err.message);
+  }
 };

@@ -1,14 +1,24 @@
 import wodsList from "data/calendario.json";
+import { useState, useEffect } from "react";
+import { getData } from "utils/client";
 
 import styles from "styles/Card.module.scss";
 
 import CardWods from "components/card/CardWods";
 
 function GridCardsWods() {
+   const [wodList, setWodList] = useState([]);
+   useEffect(() => {
+     getData("calendar")
+       .then((data) => {
+         setWodList(data);
+       })
+       .catch(console.log("mal"));
+   }, []);
   return (
     <section className={styles.listCards}>
-      {wodsList.calendar.map((i) => (
-        <CardWods key={i.day} data={i} center={'center'}/>
+      {wodList.map((i) => (
+        <CardWods key={i.day} data={i} center={"center"} />
       ))}
     </section>
   );

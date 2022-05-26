@@ -6,7 +6,7 @@ function CardWods({ data, center }) {
   return (
     <div
       className={`${styles.card} ${
-        data.wod ? (data.wod.name ? styles.destacado : null) : null
+        data ? (data.title ? styles.destacado : null) : null
       }`}
     >
       <div className={styles.cardContent} style={{ textAlign: center }}>
@@ -20,11 +20,11 @@ function CardWods({ data, center }) {
               </div>
             </div>
 
-            <p className={styles.cardTitle}>{data.wod.name}</p>
+            <p className={styles.cardTitle}>{data.title}</p>
           </>
         ) : (
           <div className={styles.cardTop}>
-            <p className={styles.cardTitle}>{data.name}</p>
+            <p className={styles.cardTitle}>{data.title}</p>
             <div className={styles.cardIcons}>
               <i>Editar</i>
               <i>Borrar</i>
@@ -39,11 +39,7 @@ function CardWods({ data, center }) {
                   {i.reps} {i.name}
                 </li>
               ))
-            : data.wod.exercise.map((i) => (
-                <li key={i.id}>
-                  {i.reps} {i.name}
-                </li>
-              ))}
+            : null}
         </ul>
       </div>
       {data.time | data.rounds ? (
@@ -51,15 +47,6 @@ function CardWods({ data, center }) {
           {data.time ? <span>{data.time} min</span> : null}
           {data.rounds ? <span>{data.rounds} Rondas</span> : null}
         </div>
-      ) : null}
-
-      {data.wod ? (
-        data.wod.time | data.wod.rounds ? (
-          <div className={styles.cardFooter}>
-            {data.wod.time ? <span>{data.wod.time} min</span> : null}
-            {data.wod.rounds ? <span>{data.wod.rounds} Rondas</span> : null}
-          </div>
-        ) : null
       ) : null}
     </div>
   );

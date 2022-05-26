@@ -14,7 +14,7 @@ const FirebaseAuth = () => {
         <Button
           onClick={googleSignIn}
           text={"Entrar con Google"}
-          type={"secondary"}
+          style={"secondary"}
           icon={"/logo-google.png"}
         />
       ) : null}

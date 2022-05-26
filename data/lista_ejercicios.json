@@ -1,322 +1,327 @@
 [
-      {
-         "name":"Overhead Squat",
-         "image":"http://www.shreddedcore.com/wp-content/uploads/2017/08/over-head-squatting.gif",
-         "score":[]
-      },{
-         "name":"Press Banca",
-         "image":"https://i.imgur.com/VVP2kFa.gif",
-         "score":[]
-      },{
-         "name":"Press Strict",
-         "image":"https://hips.hearstapps.com/ame-prod-menshealth-assets.s3.amazonaws.com/main/assets/how-to-do-the-military-press.gif",
-         "score":[]
-      },{
-         "name":"Deadlift",
-         "image":"https://hips.hearstapps.com/ame-prod-menshealth-assets.s3.amazonaws.com/main/assets/deadlift.gif?crop=0.765xw:1.00xh;0.169xw,0&resize=320:*",
-         "score":[]
-      },{
-         "name":"Back Squat",
-         "image":"https://c.tenor.com/pANVg22G1JAAAAAC/workouts-squats.gif",
-         "score":[]
-      },{
-         "name":"Front Squat",
-         "image":"https://thumbs.gfycat.com/SadSpeedyCentipede-max-1mb.gif",
-         "score":[]
-      },
-      {
-         "name":"Ring Push-Up",
-         "image":"https://i.makeagif.com/media/9-23-2016/oCNSiL.gif",
-         "score":[]
-      },
-      {
-         "name":"Kipping Handstand Push-up",
-         "image":"https://thumbs.gfycat.com/EllipticalNewBorzoi-max-14mb.gif",
-         "score":[]
-      },
-      {
-         "name":"Clean and Push Jerk",
-         "image":"https://thumbs.gfycat.com/GloomyLightheartedArgentineruddyduck-size_restricted.gif",
-         "score":[]
-      },
-      {
-         "name":"Rope Climb (Basket)",
-         "image":"https://thumbs.gfycat.com/TeemingRedAsianpiedstarling-size_restricted.gif",
-         "score":[]
-      },
-      {
-         "name":"Power Clean and Split Jerk",
-         "image":"https://hips.hearstapps.com/ame-prod-menshealth-assets.s3.amazonaws.com/main/assets/CleanJerk.gif?resize=480:*",
-         "score":[]
-      },
-      {
-         "name":"Toes-to-Bar",
-         "image":"https://qph.fs.quoracdn.net/main-qimg-bdea04c365f81a7ed5236ae272d5b8ff",
-         "score":[]
-      },
-      {
-         "name":"Hang Clean and Push Jerk",
-         "image":"https://thumbs.gfycat.com/GloomyLightheartedArgentineruddyduck-size_restricted.gif",
-         "score":[]
-      },
-      {
-         "name":"Hang Power Clean and Push Jerk",
-         "image":"https://i.ytimg.com/vi/Cw0YyyJ8Tgw/maxresdefault.jpg",
-         "score":[]
-      },
-      {
-         "name":"Kipping Toes-to-Bar",
-         "image":"https://i.ytimg.com/vi/_03pCKOv4l4/maxresdefault.jpg",
-         "score":[]
-      },
-      {
-         "name":"Dumbbell Power Snatch",
-         "image":"https://i.makeagif.com/media/7-04-2020/Tbmmnc.gif",
-         "score":[]
-      },
-      {
-         "name":"Chest-to-Wall Handstand Push-Up",
-         "image":"https://i.ytimg.com/vi/lkPPVyExFpU/maxresdefault.jpg",
-         "score":[]
-      },
-      {
-         "name":"Burpee",
-         "image":"https://c.tenor.com/u2-VJiigKCkAAAAC/exercise-jump.gif",
-         "score":[]
-      },
-      {
-         "name":"Dumbbell Push Press",
-         "image":"https://thumbs.gfycat.com/GrotesqueSameFanworms-size_restricted.gif",
-         "score":[]
-      },
-      {
-         "name":"Dumbbell Power Clean",
-         "image":"https://i.ytimg.com/vi/vh0Tj7G4k0c/maxresdefault.jpg",
-         "score":[]
-      },
-      {
-         "name":"Freestanding Handstand Push-Up",
-         "image":"https://qph.cf2.quoracdn.net/main-qimg-5cf8eb52b6f648da2103ee0c9f7a4d90",
-         "score":[]
-      },
-      {
-         "name":"Sots Press",
-         "image":"https://i.ytimg.com/vi/eJ9MLnNV6FY/maxresdefault.jpg",
-         "score":[]
-      },
-      {
-         "name":"Muscle-Up",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Kipping Deficit Handstand Push-Up",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Dumbbell Clean",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Clean and Jerk",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Hanging L-Sit",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Pull-Up",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Ring Dip",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Hang Snatch",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Split Clean",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Box Step-Up",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Dumbbell Front Squat",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Hang Clean",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Dumbbell Push Jerk",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Dip",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Dumbbell Deadlift",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Split Snatch",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Pull-Over",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Sumo Deadlift",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Kettlebell Swing",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Air Squat",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Split Jerk",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Kettlebell Snatch",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Wall Walk",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Hang Power Snatch",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Dumbbell Thruster",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Kipping Muscle-Up",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Dumbbell Hang Clean",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Hang Power Clean",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Box Jump",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"AbMat Sit-Up",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Power Snatch",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Clean",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Snatch",
-         "image":"https://thumbs.gfycat.com/AromaticAnotherIslandcanary-size_restricted.gif",
-         "score":[]
-      },
-      {
-         "name":"Dumbbell Overhead Squat",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"GHD Sit-Up",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Wall-Ball Shot",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Ring Row",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Kipping Pull-Up",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Clean & Jerk",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Clean",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Single-Leg Squat",
-         "image":"",
-         "score":[]
-      },
-      {
-         "name":"Dumbbell Squat Snatch",
-         "image":"https://thumbs.gfycat.com/CheeryFirsthandCow-size_restricted.gif",
-         "score":[]
-      },
-      {
-         "name":"Dumbbell Farmers Carry",
-         "image":"https://i.pinimg.com/originals/68/e4/24/68e4249d5fa4a8f9ff06867d3052d80b.gif",
-         "score":[]
-      }
-   ]
+    {
+        "image": "",
+        "name": "AbMat Sit-Up",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Air Squat",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Box Jump",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Box Step-Up",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Clean & Jerk",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Clean and Jerk",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Clean",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Clean",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Dip",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Dumbbell Clean",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Dumbbell Deadlift",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Dumbbell Front Squat",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Dumbbell Hang Clean",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Dumbbell Overhead Squat",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Dumbbell Push Jerk",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Dumbbell Thruster",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "GHD Sit-Up",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Hang Clean",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Hang Power Clean",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Hang Power Snatch",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Hang Snatch",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Hanging L-Sit",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Kettlebell Snatch",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Kettlebell Swing",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Kipping Deficit Handstand Push-Up",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Kipping Muscle-Up",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Kipping Pull-Up",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Muscle-Up",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Power Snatch",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Pull-Over",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Pull-Up",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Ring Dip",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Ring Row",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Single-Leg Squat",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Split Clean",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Split Jerk",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Split Snatch",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Sumo Deadlift",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Wall Walk",
+        "score": []
+    },
+    {
+        "image": "",
+        "name": "Wall-Ball Shot",
+        "score": []
+    },
+    {
+        "image": "http://www.shreddedcore.com/wp-content/uploads/2017/08/over-head-squatting.gif",
+        "name": "Overhead Squat",
+        "score": []
+    },
+    {
+        "image": "https://c.tenor.com/pANVg22G1JAAAAAC/workouts-squats.gif",
+        "name": "Back Squat",
+        "score": []
+    },
+    {
+        "image": "https://c.tenor.com/u2-VJiigKCkAAAAC/exercise-jump.gif",
+        "name": "Burpee",
+        "score": []
+    },
+    {
+        "image": "https://hips.hearstapps.com/ame-prod-menshealth-assets.s3.amazonaws.com/main/assets/CleanJerk.gif?resize=480:*",
+        "name": "Power Clean and Split Jerk",
+        "score": []
+    },
+    {
+        "image": "https://hips.hearstapps.com/ame-prod-menshealth-assets.s3.amazonaws.com/main/assets/deadlift.gif?crop=0.765xw:1.00xh;0.169xw,0&resize=320:*",
+        "name": "Deadlift",
+        "score": []
+    },
+    {
+        "image": "https://hips.hearstapps.com/ame-prod-menshealth-assets.s3.amazonaws.com/main/assets/how-to-do-the-military-press.gif",
+        "name": "Press Strict",
+        "score": []
+    },
+    {
+        "image": "https://i.imgur.com/VVP2kFa.gif",
+        "name": "Press Banca",
+        "score": []
+    },
+    {
+        "image": "https://i.makeagif.com/media/7-04-2020/Tbmmnc.gif",
+        "name": "Dumbbell Power Snatch",
+        "score": []
+    },
+    {
+        "image": "https://i.makeagif.com/media/9-23-2016/oCNSiL.gif",
+        "name": "Ring Push-Up",
+        "score": []
+    },
+    {
+        "image": "https://i.pinimg.com/originals/68/e4/24/68e4249d5fa4a8f9ff06867d3052d80b.gif",
+        "name": "Dumbbell Farmers Carry",
+        "score": []
+    },
+    {
+        "image": "https://i.ytimg.com/vi/Cw0YyyJ8Tgw/maxresdefault.jpg",
+        "name": "Hang Power Clean and Push Jerk",
+        "score": []
+    },
+    {
+        "image": "https://i.ytimg.com/vi/_03pCKOv4l4/maxresdefault.jpg",
+        "name": "Kipping Toes-to-Bar",
+        "score": []
+    },
+    {
+        "image": "https://i.ytimg.com/vi/eJ9MLnNV6FY/maxresdefault.jpg",
+        "name": "Sots Press",
+        "score": []
+    },
+    {
+        "image": "https://i.ytimg.com/vi/lkPPVyExFpU/maxresdefault.jpg",
+        "name": "Chest-to-Wall Handstand Push-Up",
+        "score": []
+    },
+    {
+        "image": "https://i.ytimg.com/vi/vh0Tj7G4k0c/maxresdefault.jpg",
+        "name": "Dumbbell Power Clean",
+        "score": []
+    },
+    {
+        "image": "https://qph.cf2.quoracdn.net/main-qimg-5cf8eb52b6f648da2103ee0c9f7a4d90",
+        "name": "Freestanding Handstand Push-Up",
+        "score": []
+    },
+    {
+        "image": "https://qph.fs.quoracdn.net/main-qimg-bdea04c365f81a7ed5236ae272d5b8ff",
+        "name": "Toes-to-Bar",
+        "score": []
+    },
+    {
+        "image": "https://thumbs.gfycat.com/AromaticAnotherIslandcanary-size_restricted.gif",
+        "name": "Snatch",
+        "score": []
+    },
+    {
+        "image": "https://thumbs.gfycat.com/CheeryFirsthandCow-size_restricted.gif",
+        "name": "Dumbbell Squat Snatch",
+        "score": []
+    },
+    {
+        "image": "https://thumbs.gfycat.com/EllipticalNewBorzoi-max-14mb.gif",
+        "name": "Kipping Handstand Push-up",
+        "score": []
+    },
+    {
+        "image": "https://thumbs.gfycat.com/GloomyLightheartedArgentineruddyduck-size_restricted.gif",
+        "name": "Clean and Push Jerk",
+        "score": []
+    },
+    {
+        "image": "https://thumbs.gfycat.com/GloomyLightheartedArgentineruddyduck-size_restricted.gif",
+        "name": "Hang Clean and Push Jerk",
+        "score": []
+    },
+    {
+        "image": "https://thumbs.gfycat.com/GrotesqueSameFanworms-size_restricted.gif",
+        "name": "Dumbbell Push Press",
+        "score": []
+    },
+    {
+        "image": "https://thumbs.gfycat.com/SadSpeedyCentipede-max-1mb.gif",
+        "name": "Front Squat",
+        "score": []
+    },
+    {
+        "image": "https://thumbs.gfycat.com/TeemingRedAsianpiedstarling-size_restricted.gif",
+        "name": "Rope Climb (Basket)",
+        "score": []
+    }
+]

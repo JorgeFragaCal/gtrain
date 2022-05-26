@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import dataMenu from "data/menu.json";
 import styles from "styles/Layout.module.scss";
-
+import style from "styles/Button.module.scss";
 import { withAuthUser, AuthAction } from "next-firebase-auth";
 
 import Button from "components/atoms/Button";
@@ -11,6 +11,7 @@ import Form from "components/form/Form";
 import GridCardsWods from "components/card/GridCardsWods";
 import Sidebar from "components/sidebar/Sidebar";
 import Top from "components/Top";
+import Link from "next/link";
 
 function WodsList() {
   const [isOpen, setOpen] = useState(false);
@@ -28,8 +29,10 @@ function WodsList() {
         <Top title={"WODs"} />
         {isOpen === true ? <Form setOpen={setOpen} /> : null}
         <div className={`${styles.container} ${styles.container__buttons}`}>
-          <Button onClick={openForm} text={"Crear WOD"} type={"primary"} />
-          <Button text={"Planificar Entrenos"} type={"primary"} />
+          <Button onClick={openForm} text={"Crear WOD"} style={"primary"} />
+          <Link href={"/wods/calendario"} >
+            <a className={style.primary}>Planificar Entrenos</a>
+          </Link>
         </div>
         <section className={`${styles.container} ${styles.container__filter}`}>
           <Filter filtros={[]} />
