@@ -10,7 +10,7 @@ function Login() {
         <Image alt="" src="/Logo.png" width="170" height="50"></Image>
         <div className={styles.loginForm}>
           <div className={styles.imgLogo}>
-            <Image alt="" src="/LogoLogin.jpg" width="170" height="170"></Image>
+            <Image alt="" src="/logo-gtrain-completo.svg" width="300" height="170"/>
           </div>
           <h1>Iniciar Sesion</h1>
           <FirebaseAuth />

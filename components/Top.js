@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "styles/Top.module.scss";
 function Top({ title }) {
   return (
@@ -8,7 +9,7 @@ function Top({ title }) {
       </div>
       <div></div>
       <div className={styles.topTitle}>
-        <i>🔍</i>
+        <Image alt='search' src='/Search.svg' width={30} height={30}/>
         <input id={styles.buscador} type="text" name="buscar" />
       </div>
     </section>

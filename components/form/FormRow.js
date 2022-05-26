@@ -3,7 +3,7 @@ function FormRow() {
   return (
     <>
       <select name="" id="">
-        {data.exercise_list.map((i) => (
+        {data.map((i) => (
           <option key={i.id} value="i.name">
             {i.name}
           </option>

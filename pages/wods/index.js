@@ -26,7 +26,7 @@ function WodsList() {
       />
       <section className={styles.container}>
         <Top title={"WODs"} />
-        {isOpen === true ? <Form /> : null}
+        {isOpen === true ? <Form setOpen={setOpen} /> : null}
         <div className={`${styles.container} ${styles.container__buttons}`}>
           <Button onClick={openForm} text={"Crear WOD"} type={"primary"} />
           <Button text={"Planificar Entrenos"} type={"primary"} />

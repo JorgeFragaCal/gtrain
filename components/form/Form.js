@@ -1,7 +1,7 @@
 import FormRow from "components/form/FormRow";
 import styles from "styles/Form.module.scss";
 import Button from "components/atoms/Button";
-function Form() {
+function Form({ setOpen }) {
   const listaEjercicos = [
     {
       id: 1,
@@ -27,7 +27,7 @@ function Form() {
       <form action="" method="post" className={styles.container}>
         <div className={styles.formTop}>
           <input type="text" name="" id="" placeholder="Nombre del WOD" />
-          <i onClick={'/'}>Cerrar</i>
+          <i onClick={setOpen}>Cerrar</i>
         </div>
         <div className={styles.formList}>
           <label htmlFor="">Ejecicio</label>
@@ -62,7 +62,7 @@ function Form() {
           <Button text={"Crear"} type={"primary"} />
         </div>
       </form>
-      <div className={styles.overlay}></div>
+      <div className={styles.overlay} onClick={setOpen}></div>
     </>
   );
 }

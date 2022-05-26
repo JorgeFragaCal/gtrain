@@ -17,10 +17,10 @@ function Sidebar({ modules, navItems, user }) {
           <a>
             <div className={styles.moduleBarLogo}>
               <Image
-                src="/Weightlifting.svg"
+                src="/logo-gtrain-blanco.svg"
                 alt="Settings"
-                width="40"
-                height="40"
+                width="100"
+                height="100"
               />
             </div>
           </a>
