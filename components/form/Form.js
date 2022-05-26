@@ -49,7 +49,6 @@ function Form({ setOpen }) {
   };
 
   const onSubmitForm = (e) => {
-    e.preventDefault();
     console.log(exercise.length);
     if (time.trim() === "" || rounds.trim() === "" || exercise.length === 0) {
       window.alert("Faltan campos por rellenar");
