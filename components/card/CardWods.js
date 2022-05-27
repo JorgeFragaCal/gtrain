@@ -6,7 +6,7 @@ function CardWods({ data, center }) {
   return (
     <div
       className={`${styles.card} ${
-        data ? (data.title ? styles.destacado : null) : null
+        data ? (data.destacado ? styles.destacado : null) : null
       }`}
     >
       <div className={styles.cardContent} style={{ textAlign: center }}>

@@ -16,10 +16,60 @@
         align-items:center;
         display: grid;
         gap: 1rem;
-        grid-template-columns: 3fr 2fr;
+        grid-template-columns: 2fr 1fr auto;
         justify-items: end;
         i{
             cursor: pointer;
+        }
+        .containerC {
+            display: grid;
+            justify-self: left;
+            grid-template-columns: auto 1fr;
+            position: relative;
+            padding-left: 2.5rem;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            input {
+                display: none;
+                &:checked~.checkmark {
+                    background-color: $color-orange;
+                }
+                &:checked~.checkmark:after {
+                    display: block;
+                }
+            }
+            .checkmark {
+                margin-top: -5px;
+                position: absolute;
+                height: 30px;
+                width: 30px;
+                background-color: $color-grey;
+                border-radius: $border-radius-box;
+                -webkit-border-radius: $border-radius-box;
+                -moz-border-radius: $border-radius-box;
+                -ms-border-radius: $border-radius-box;
+                -o-border-radius: $border-radius-box;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    display: none;
+                    left: 12px;
+                    top: 7px;
+                    width: 5px;
+                    height: 10px;
+                    border: solid $color-white;
+                    border-width: 0 3px 3px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+            }
+            &:hover input~.checkmark {
+                background-color: $color-darkgrey;
+            }
         }
     }
     .formFieldset,.formList {

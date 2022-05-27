@@ -1,13 +1,18 @@
 import data from "data/lista_ejercicios.json";
+import { v4 as uuidv4 } from "uuid";
+import { addWod } from "utils/client";
 import { useRouter } from "next/router";
+import { useState } from "react";
 import styles from "styles/Form.module.scss";
 import Button from "components/atoms/Button";
-import { useState } from "react";
-import { addWod } from "utils/client";
+
 function Form({ setOpen }) {
+  const { v4: uuidv4 } = require("uuid");
   const router = useRouter();
+  const [check, setCheck] = useState(false);
   const [loading, setLoading] = useState(false);
   const [ejercicio, setEjercicio] = useState({
+    id: "",
     name: "",
     reps: "",
     weigth: "",
@@ -16,27 +21,29 @@ function Form({ setOpen }) {
   const { name, reps, weigth } = ejercicio;
 
   const [wod, setWod] = useState({
+    id: "",
     title: "",
+    destacado: false,
     time: "",
     rounds: "",
     exercise: [],
   });
   const { title, time, rounds, exercise } = wod;
 
-  const onChangeExercice = (e) => {
-    setEjercicio({
-      ...ejercicio,
-      [e.target.name]: e.target.value,
-    });
+  const toggleCheckboxChange = () => {
+    setCheck(!check);
   };
+
 
   const addExercice = (e) => {
     e.preventDefault();
-    if (name.trim() === "" || reps.trim() === "") {
+    if (name.trim() === "") {
+      window.alert("Añade un Ejercicio");
       return;
     }
     setlistaEjercicos([...listaEjercicos, ejercicio]);
     setEjercicio({
+      id: uuidv4(),
       name: "",
       reps: "",
       weigth: "",
@@ -44,10 +51,15 @@ function Form({ setOpen }) {
   };
 
   const onChange = (e) => {
+    setEjercicio({
+      ...ejercicio,
+      [e.target.name]: e.target.value,
+    });
     setWod({
       ...wod,
       [e.target.name]: e.target.value,
       exercise: listaEjercicos,
+      destacado: !check,
     });
   };
 
@@ -65,7 +77,9 @@ function Form({ setOpen }) {
     addWod(wod);
     setLoading(!loading);
     setWod({
+      id: uuidv4(),
       title: "",
+      destacado: false,
       time: "",
       rounds: "",
       exercise: [],
@@ -75,6 +89,8 @@ function Form({ setOpen }) {
       router.reload(window.location.pathname);
     }, 2000);
   };
+  console.log(wod);
+  console.log();
   return (
     <>
       <form action="" method="post" className={styles.container}>
@@ -87,6 +103,20 @@ function Form({ setOpen }) {
             value={title}
             onChange={onChange}
           />
+          <label className={styles.containerC}>
+            <input
+              type="checkbox"
+              value={check}
+              name="destacado"
+              checked={check}
+              onChange={(e) => {
+                toggleCheckboxChange();
+                onChange(e);
+              }}
+            />
+            Destacado
+            <span className={styles.checkmark}></span>
+          </label>
           <i onClick={setOpen}>X</i>
         </div>
         <div className={styles.formList}>
@@ -113,7 +143,7 @@ function Form({ setOpen }) {
             name="name"
             id=""
             value={name}
-            onChange={onChangeExercice}
+            onChange={onChange}
             placeholder="Seleccionar Ejercicio"
           >
             <option value="" disabled selected hidden>
@@ -129,9 +159,9 @@ function Form({ setOpen }) {
             type="number"
             name="reps"
             id=""
-            placeholder="0*"
+            placeholder="0"
             value={reps}
-            onChange={onChangeExercice}
+            onChange={onChange}
           />
           <input
             type="number"
@@ -139,7 +169,7 @@ function Form({ setOpen }) {
             id=""
             placeholder="0"
             value={weigth}
-            onChange={onChangeExercice}
+            onChange={onChange}
           />
           <div className={styles.formButton}>
             <Button

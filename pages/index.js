@@ -34,7 +34,7 @@ const Home = () => {
           name="description"
           content="Tu plataforma de gestion para tu gimnasio"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo-gtrain-azul.svg" />
       </Head>
 
       <main>
