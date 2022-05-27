@@ -10,9 +10,10 @@ function GridCardsWods() {
    useEffect(() => {
      getData("wods")
        .then((data) => {
-         setWodList(data);
+         const dataSort = data.sort((a, b) => a.title.localeCompare(b.title));
+         setWodList(dataSort);
        })
-       .catch(console.log("mal"));
+       .catch(console.log("no hay WODs"));
    }, []);
   return (
     <section className={styles.gridCards}>

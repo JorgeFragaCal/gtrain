@@ -10,9 +10,10 @@ function GridCardsUsers() {
   useEffect(() => {
     getData("usuarios")
       .then((data) => {
-        setUserListInfo(data);
+        const dataSort = data.sort((a, b) => a.name.localeCompare(b.name));
+        setUserListInfo(dataSort);
       })
-      .catch(console.log("mal"));
+      .catch(console.log("no hay Usuarios"));
   }, []);
   return (
     <section className={styles.gridCards}>

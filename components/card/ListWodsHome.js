@@ -13,7 +13,7 @@ function GridCardsWods() {
        .then((data) => {
          setWodList(data);
        })
-       .catch(console.log("mal"));
+       .catch(console.log("no hay WODS semanales"));
    }, []);
   return (
     <section className={styles.listCards}>

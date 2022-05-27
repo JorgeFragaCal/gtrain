@@ -1,9 +1,12 @@
 import data from "data/lista_ejercicios.json";
+import { useRouter } from "next/router";
 import styles from "styles/Form.module.scss";
 import Button from "components/atoms/Button";
 import { useState } from "react";
 import { addWod } from "utils/client";
 function Form({ setOpen }) {
+  const router = useRouter();
+  const [loading, setLoading] = useState(false);
   const [ejercicio, setEjercicio] = useState({
     name: "",
     reps: "",
@@ -49,12 +52,18 @@ function Form({ setOpen }) {
   };
 
   const onSubmitForm = (e) => {
-    console.log(exercise.length);
-    if (time.trim() === "" || rounds.trim() === "" || exercise.length === 0) {
+    e.preventDefault();
+    if (
+      title.trim() === "" ||
+      time.trim() === "" ||
+      rounds.trim() === "" ||
+      exercise.length === 0
+    ) {
       window.alert("Faltan campos por rellenar");
       return;
     }
     addWod(wod);
+    setLoading(!loading);
     setWod({
       title: "",
       time: "",
@@ -62,8 +71,10 @@ function Form({ setOpen }) {
       exercise: [],
     });
     setlistaEjercicos([]);
+    setTimeout(() => {
+      router.reload(window.location.pathname);
+    }, 2000);
   };
-  console.log(wod);
   return (
     <>
       <form action="" method="post" className={styles.container}>
@@ -72,7 +83,7 @@ function Form({ setOpen }) {
             type="text"
             name="title"
             id=""
-            placeholder="Nombre del WOD"
+            placeholder="Nombre del WOD*"
             value={title}
             onChange={onChange}
           />
@@ -165,6 +176,7 @@ function Form({ setOpen }) {
             style={"primary"}
             value="addWod"
             name="action"
+            loading={loading}
           />
         </div>
       </form>

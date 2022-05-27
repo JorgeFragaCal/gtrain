@@ -10,3 +10,39 @@
         justify-content: space-between;
         grid-template-columns: auto 1fr;
 }
+
+.spinner {
+    animation: rotate 2s linear infinite;
+    width: 25px;
+    height: 25px;
+
+    & .path {
+        stroke: $color-white;
+        stroke-linecap: round;
+        animation: dash 1.5s ease-in-out infinite;
+    }
+
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}
