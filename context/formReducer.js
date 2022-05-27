@@ -1,16 +1,14 @@
-import {
-  OPEN,
-} from "types";
+import { GET_INFO } from "types";
 
-const productReducer = (state, action) => {
+const userReducer = (state, action) => {
   switch (action.type) {
-    case OPEN:
+    case GET_INFO:
       return {
         ...state,
-        productsDetail: action.payload,
+        usersInfo: action.payload,
       };
     default:
       return state;
   }
 };
-export default productReducer;
+export default userReducer;

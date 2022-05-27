@@ -5,9 +5,9 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import styles from "styles/Form.module.scss";
 import Button from "components/atoms/Button";
+import Image from "next/image";
 
 function Form({ setOpen }) {
-  const { v4: uuidv4 } = require("uuid");
   const router = useRouter();
   const [check, setCheck] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -34,7 +34,6 @@ function Form({ setOpen }) {
     setCheck(!check);
   };
 
-
   const addExercice = (e) => {
     e.preventDefault();
     if (name.trim() === "") {
@@ -43,7 +42,7 @@ function Form({ setOpen }) {
     }
     setlistaEjercicos([...listaEjercicos, ejercicio]);
     setEjercicio({
-      id: uuidv4(),
+      id: "",
       name: "",
       reps: "",
       weigth: "",
@@ -54,12 +53,14 @@ function Form({ setOpen }) {
     setEjercicio({
       ...ejercicio,
       [e.target.name]: e.target.value,
+      id: uuidv4(),
     });
     setWod({
       ...wod,
       [e.target.name]: e.target.value,
       exercise: listaEjercicos,
       destacado: !check,
+      id: uuidv4(),
     });
   };
 
@@ -77,7 +78,7 @@ function Form({ setOpen }) {
     addWod(wod);
     setLoading(!loading);
     setWod({
-      id: uuidv4(),
+      id: "",
       title: "",
       destacado: false,
       time: "",
@@ -89,8 +90,7 @@ function Form({ setOpen }) {
       router.reload(window.location.pathname);
     }, 2000);
   };
-  console.log(wod);
-  console.log();
+
   return (
     <>
       <form action="" method="post" className={styles.container}>
@@ -117,7 +117,15 @@ function Form({ setOpen }) {
             Destacado
             <span className={styles.checkmark}></span>
           </label>
-          <i onClick={setOpen}>X</i>
+          <div>
+            <Image
+              onClick={setOpen}
+              src="/Close.svg"
+              alt=""
+              width={20}
+              height={20}
+            />
+          </div>
         </div>
         <div className={styles.formList}>
           <label htmlFor="">Ejecicio</label>
@@ -132,8 +140,8 @@ function Form({ setOpen }) {
                 <p>{i.reps}</p>
                 <p>{i.weigth}</p>
                 <div className={styles.formEditIcons}>
-                  <i>Editar</i>
-                  <i>Eliminar</i>
+                  <Image src="/Edit.svg" alt="" width={20} height={20} />
+                  <Image src="/Delete.svg" alt="" width={20} height={20} />
                 </div>
               </div>
             ))
@@ -144,6 +152,7 @@ function Form({ setOpen }) {
             id=""
             value={name}
             onChange={onChange}
+            defaultValue
             placeholder="Seleccionar Ejercicio"
           >
             <option value="" disabled selected hidden>
@@ -194,7 +203,7 @@ function Form({ setOpen }) {
             type="text"
             name="rounds"
             id=""
-            placeholder="Rondas (5,6,7 max)*"
+            placeholder="Rondas (5,6,7, max)*"
             value={rounds}
             onChange={onChange}
           />

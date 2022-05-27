@@ -17,8 +17,8 @@ function UserInfo({ user }) {
           <Image src="/LogoLogin.jpg" alt="Settings" width="125" height="125" />
         )}
         <div className={styles.icons}>
-          <i>Editar</i>
-          <i>Eliminar</i>
+          <Image src="/Edit.svg" alt="" width={20} height={20} />
+          <Image src="/Delete.svg" alt="" width={20} height={20} />
         </div>
       </div>
       <div>

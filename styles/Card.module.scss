@@ -13,6 +13,7 @@
 .card{
     display: grid;
     grid-template-rows: 1fr auto;
+    position: relative;
 
     .cardContent{
         @include card();
@@ -23,8 +24,9 @@
 
 
             .cardIcons {
-                & i{
-                    padding-left: 0.5rem;
+                img{
+                    padding-left: 0.5rem!important;
+                    cursor: pointer;
                 }
             }
         }
@@ -43,8 +45,8 @@
         margin-bottom: 1rem;
         }
     .cardFooter{
-        @include card();
-        display: flex;
+        border: $border;display: flex;
+        padding: 1rem;
         justify-content: space-between;
         border-top:none;
     }

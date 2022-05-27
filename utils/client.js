@@ -7,6 +7,7 @@ import {
   query,
   where,
   getFirestore,
+  deleteDoc,
 } from "firebase/firestore";
 
 import { initializeApp, getApps, getApp } from "firebase/app";
@@ -41,6 +42,20 @@ export const addWod = async (data) => {
       await addDoc(collection(db, "wods"), data);
       console.log("Wod Añadido");
     }
+  } catch (err) {
+    console.error(err);
+    alert(err.message);
+  }
+};
+
+export const deleteItem = async (id) => {
+  try {
+    const q = query(collection(db, "wods"), where("id", "==", id));
+    const docs = await getDocs(q);
+    docs.forEach(async (d) => {
+      await deleteDoc(doc(db, "wods", d.id));
+      console.log('Borrao');
+    });
   } catch (err) {
     console.error(err);
     alert(err.message);

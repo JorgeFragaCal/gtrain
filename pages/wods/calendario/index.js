@@ -7,6 +7,7 @@ import { withAuthUser, AuthAction } from "next-firebase-auth";
 import Calendar from "components/calendar/Calendar";
 import Sidebar from "components/sidebar/Sidebar";
 import Top from "components/Top";
+import Leyend from "components/Leyend";
 
 function Calendario() {
   return (
@@ -18,6 +19,7 @@ function Calendario() {
       />
       <section className={styles.container}>
         <Top title={"Calendario"} />
+        <Leyend/>
         <Calendar />
       </section>
     </main>

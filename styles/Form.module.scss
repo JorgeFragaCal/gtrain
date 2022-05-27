@@ -18,8 +18,11 @@
         gap: 1rem;
         grid-template-columns: 2fr 1fr auto;
         justify-items: end;
-        i{
-            cursor: pointer;
+        div{
+            height: 100%;
+            img{
+                cursor: pointer;
+            }
         }
         .containerC {
             display: grid;
@@ -52,6 +55,7 @@
                 -moz-border-radius: $border-radius-box;
                 -ms-border-radius: $border-radius-box;
                 -o-border-radius: $border-radius-box;
+                border: $border;
                 &:after{
                     content: "";
                     position: absolute;
@@ -104,6 +108,7 @@
 }
 .overlay{
     background-color: #000000e6;
+    z-index: 1;
     height: 100%;
     left: 0;
     opacity: 1;

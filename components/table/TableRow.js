@@ -16,8 +16,8 @@ function TableRow({ name, img, state, date, time }) {
         <strong>{time}</strong>
       </div>
       <div>
-        <i>Editar</i>
-        <i>Eliminar</i>
+        <Image src="/Edit.svg" alt="" width={20} height={20} />
+        <Image src="/Delete.svg" alt="" width={20} height={20} />
       </div>
     </div>
   );

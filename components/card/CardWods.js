@@ -1,8 +1,14 @@
 import styles from "styles/Card.module.scss";
 
 import AlertDelete from "components/AlertDelete";
+import Image from "next/image";
+import { useState } from "react";
 
 function CardWods({ data, center }) {
+  const [isOpen, setOpen] = useState(false);
+  const openForm = () => {
+    setOpen(!isOpen);
+  };
   return (
     <div
       className={`${styles.card} ${
@@ -15,8 +21,14 @@ function CardWods({ data, center }) {
             <div className={styles.cardTop}>
               <p className={styles.cardTitle}>{data.day}</p>
               <div className={styles.cardIcons}>
-                <i>Editar</i>
-                <i>Borrar</i>
+                <Image src="/Edit.svg" alt="" width={20} height={20} />
+                <Image
+                  onClick={openForm}
+                  src="/Delete.svg"
+                  alt=""
+                  width={20}
+                  height={20}
+                />
               </div>
             </div>
 
@@ -26,12 +38,18 @@ function CardWods({ data, center }) {
           <div className={styles.cardTop}>
             <p className={styles.cardTitle}>{data.title}</p>
             <div className={styles.cardIcons}>
-              <i>Editar</i>
-              <i>Borrar</i>
+              <Image src="/Edit.svg" alt="" width={20} height={20} />
+              <Image
+                onClick={openForm}
+                src="/Delete.svg"
+                alt=""
+                width={20}
+                height={20}
+              />
             </div>
           </div>
         )}
-        <AlertDelete display={false} />
+        {isOpen ? <AlertDelete setOpen={openForm} id={data.id} /> : null}
         <ul className={styles.cardList}>
           {data.exercise
             ? data.exercise.map((i) => (
