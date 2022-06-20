@@ -3,10 +3,10 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 
 function Calendar() {
   const events = [
-    { title: "AMANDA", date: "2022-05-10", color: "#ef5da8" },
-    { title: "SANDRA", date: "2022-05-12", color: "#ff7a00" },
-    { title: "LARA", date: "2022-05-22", color: "#659b8f" },
-    { title: "DIANA", date: "2022-05-23", color: "#6644ff" },
+    { title: "ELITE", date: "2022-06-10", color: "#ef5da8" },
+    { title: "HEAT", date: "2022-06-12", color: "#ff7a00" },
+    { title: "KIMAE", date: "2022-06-22", color: "#659b8f" },
+    { title: "WARRIOR", date: "2022-06-23", color: "#6644ff" },
   ];
   return (
     <FullCalendar

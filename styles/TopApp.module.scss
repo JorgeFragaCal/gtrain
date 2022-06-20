@@ -1,0 +1,8 @@
+@import 'theme.scss';
+.container{
+  background-color: $color-orange;
+ display: flex;
+ justify-content: space-between;
+  padding: 1rem;
+
+}

@@ -7,14 +7,15 @@ import styles from "styles/Card.module.scss";
 import CardWods from "components/card/CardWods";
 
 function GridCardsWods() {
-   const [wodList, setWodList] = useState([]);
-   useEffect(() => {
-     getData("calendar")
-       .then((data) => {
-         setWodList(data);
-       })
-       .catch(console.log("no hay WODS semanales"));
-   }, []);
+  const [wodList, setWodList] = useState([]);
+  useEffect(() => {
+    getData("calendar")
+      .then((data) => {
+        setWodList(data);
+      })
+      .catch(console.log("no hay WODS semanales"));
+  }, []);
+  wodList.sort((a, b) => (a.id > b.id ? 1 : -1));
   return (
     <section className={styles.listCards}>
       {wodList.map((i) => (

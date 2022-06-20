@@ -48,12 +48,8 @@
                "title":"Reservas",
                "url":"clientes/reservas",
                "icon":null
-            },
-            {
-               "title":"Pagos",
-               "url":"clientes/pagos",
-               "icon":null
             }
+
          ]
       }
    ],

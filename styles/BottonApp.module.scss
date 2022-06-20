@@ -1,0 +1,12 @@
+@import 'theme.scss';
+.container{
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-primary;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 390px;
+  z-index: 2;
+}
